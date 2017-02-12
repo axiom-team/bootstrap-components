@@ -32,7 +32,7 @@ const GettingStarted = () => (
         Bootstrap's CSS and JavaScript
       </a>
       {' '}
-      in your <code>index.html</code>.
+      in your <code>index.html</code>
     </section>
 
     <section>
@@ -43,7 +43,7 @@ const GettingStarted = () => (
         target="_blank"
       >
         JQuery
-      </a>.
+      </a>
     </section>
 
     <h1 style={styles.header}>Install</h1>
