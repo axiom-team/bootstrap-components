@@ -9,6 +9,7 @@ const App = ({
 }, {
   router
 }) => {
+
   const sectionTitle = pathToTitle(
     router.getCurrentLocation().pathname
   )
