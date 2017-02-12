@@ -5,94 +5,92 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { Icon, Button } from 'bootstrap-components'
+import CodeSection from './CodeSection'
 import { indent } from '../utils'
 
-const styles = {
-  header: {
-    margin: '1em .75em'
-  }
-}
 const curlyStart = () => '{'
 const curlyEnd = () => '}'
 
 const GettingStarted = () => (
   <div>
 
-    <h1 style={styles.header}>Prerequisite</h1>
+    <main>
+      <h1>Prerequisite</h1>
 
-    <section>
-      Load
-      {' '}
-      <a
-        href="http://getbootstrap.com/getting-started/"
-        target="_blank"
-      >
-        Bootstrap's CSS and JavaScript
-      </a>
-      {' '}
-      in your <code>index.html</code>
-    </section>
+      <hr/>
 
-    <section>
-      Bootstrap's JavaScript require's
-      {' '}
-      <a
-        href="https://developers.google.com/speed/libraries/#jquery"
-        target="_blank"
-      >
-        JQuery
-      </a>
-    </section>
+      <section>
+        Load
+        {' '}
+        <a
+          href="http://getbootstrap.com/getting-started/"
+          target="_blank"
+        >
+          Bootstrap's CSS and JavaScript
+        </a>
+        {' '}
+        in your <code>index.html</code>
+      </section>
 
-    <h1 style={styles.header}>Install</h1>
+      <section>
+        Bootstrap's JavaScript require's
+        {' '}
+        <a
+          href="https://developers.google.com/speed/libraries/#jquery"
+          target="_blank"
+        >
+          JQuery
+        </a>
+      </section>
+    </main>
 
-    <section>Install with npm</section>
+    <main>
+      <h1>Install</h1>
 
-    <section>
-      <code>npm install --save bootstrap-components</code>
-    </section>
+      <hr/>
 
-    <h1 style={styles.header}>Import</h1>
+      <section>Install with npm</section>
 
-    <section>
-      Either import multiple components in one statement
-    </section>
+      <div className="pull-right">
+        <CodeSection>npm install --save bootstrap-components</CodeSection>
+      </div>
+    </main>
 
-    <section>
-      <code>import {curlyStart()}</code>
-    </section>
+    <main>
+      <h1>Import</h1>
 
-    <section>
-      <code style={indent()}>Icon,</code>
-    </section>
+      <hr/>
 
-    <section>
-      <code style={indent()}>Button,</code>
-    </section>
+      <section>
+        Either import multiple components in one statement
+      </section>
 
-    <section>
-      <code style={indent()}>Container</code>
-    </section>
+      <div className="pull-right">
+        <CodeSection>import {curlyStart()}</CodeSection>
 
-    <section>
-      <code>{curlyEnd()} from 'bootstrap-components'</code>
-    </section>
+        <CodeSection style={indent()}>Icon,</CodeSection>
 
-    <section>
-      Or import components individually
-    </section>
+        <CodeSection style={indent()}>
+          Button,
+        </CodeSection>
 
-    <section>
-      <code>import Icon from 'bootstrap-components/Icon'</code>
-    </section>
+        <CodeSection style={indent()}>Container</CodeSection>
 
-    <section>
-      <code>import Button from 'bootstrap-components/Button'</code>
-    </section>
+        <CodeSection>{curlyEnd()} from 'bootstrap-components'</CodeSection>
+      </div>
+    </main>
 
-    <section>
-      <code>import Container from 'bootstrap-components/Container'</code>
-    </section>
+    <main>
+      <section>Or import components individually</section>
+
+      <div className="pull-right">
+        <CodeSection>import Icon from 'bootstrap-components/Icon'</CodeSection>
+
+        <CodeSection>import Button from 'bootstrap-components/Button'</CodeSection>
+
+        <CodeSection>import Container from 'bootstrap-components/Container'</CodeSection>
+      </div>
+    </main>
 
     <Link
       to="/icons"

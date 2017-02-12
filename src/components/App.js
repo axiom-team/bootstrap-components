@@ -20,7 +20,7 @@ const styles = {
   container: {
     marginBottom: '1.5em',
     backgroundColor: '#eee',
-    padding: '1em'
+    padding: '2.5em'
   },
   footer: {
     backgroundColor: '#222',

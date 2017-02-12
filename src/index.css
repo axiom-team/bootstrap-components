@@ -3,9 +3,13 @@ body {
     background-color: #222;
 }
 
+main {
+    font-size: 1.5em;
+    margin: 0 0 26em;
+}
+
 section {
-    margin: 1em;
-    font-size: large;
+    margin: .5em 0;
 }
 
 @keyframes logo-spin {

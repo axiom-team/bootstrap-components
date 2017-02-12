@@ -5,36 +5,36 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { Icon, Button } from 'bootstrap-components'
+import CodeSection from './CodeSection'
 import { indent } from '../utils'
-
-const CodeSection = (props) => (
-  <section>
-    <code {...props}>{props.children}</code>
-  </section>
-)
 
 const Icons = () => (
   <div>
-    <section>
-      Use any
-      {' '}
-      <a
-        href="http://getbootstrap.com/components/#glyphicons"
-        target="_blank"
-      >
-        Bootstrap glyphicon
-      </a>
-    </section>
+    <main>
+      <section>
+        Use any
+        {' '}
+        <a
+          href="http://getbootstrap.com/components/#glyphicons"
+          target="_blank"
+        >
+          Bootstrap glyphicon
+        </a>
+      </section>
 
-    <section>
+      <hr/>
+
       <Icon>search</Icon>
-    </section>
 
-    <CodeSection>
-      {'<Icon>search</Icon>'}
-    </CodeSection>
+      <div className="pull-right">
+        <CodeSection>
+          {'<Icon>search</Icon>'}
+        </CodeSection>
+      </div>
+    </main>
 
-    <section>
+
+    <main>
       <Button>
         <Icon>align-left</Icon>
       </Button>
@@ -50,21 +50,23 @@ const Icons = () => (
       <Button>
         <Icon>align-justify</Icon>
       </Button>
-    </section>
 
-    <CodeSection>
-      {'<Button>'}
-    </CodeSection>
+      <div className="pull-right">
+        <CodeSection>
+          {'<Button>'}
+        </CodeSection>
 
-    <CodeSection style={indent()}>
-      {'<Icon>left-align</Icon>'}
-    </CodeSection>
+        <CodeSection style={indent()}>
+          {'<Icon>left-align</Icon>'}
+        </CodeSection>
 
-    <CodeSection>
-      {'</Button>'}
-    </CodeSection>
+        <CodeSection>
+          {'</Button>'}
+        </CodeSection>
+      </div>
+    </main>
 
-    <section>
+    <main>
       <Button size="lg">
         <Icon>star</Icon> Star
       </Button>
@@ -80,19 +82,21 @@ const Icons = () => (
       <Button size="xs">
         <Icon>star</Icon> Star
       </Button>
-    </section>
 
-    <CodeSection>
-      {'<Button size="lg">'}
-    </CodeSection>
+      <div className="pull-right">
+        <CodeSection>
+          {'<Button size="lg">'}
+        </CodeSection>
 
-    <CodeSection style={indent()}>
-      {'<Icon>star</Icon> Star'}
-    </CodeSection>
+        <CodeSection style={indent()}>
+          {'<Icon>star</Icon> Star'}
+        </CodeSection>
 
-    <CodeSection>
-      {'</Button>'}
-    </CodeSection>
+        <CodeSection>
+          {'</Button>'}
+        </CodeSection>
+      </div>
+    </main>
 
     <Link
       to="/getting-started"
