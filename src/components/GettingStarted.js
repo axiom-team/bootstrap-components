@@ -6,6 +6,12 @@ import React from 'react'
 import { Link } from 'react-router'
 import { Icon, Button } from 'bootstrap-components'
 
+const curlyStart = () => '{'
+const curlyEnd = () => '}'
+const indent = () => ({
+  marginLeft: '1em'
+})
+
 const GettingStarted = () => (
   <div>
     <section>
@@ -33,20 +39,44 @@ const GettingStarted = () => (
     </section>
 
     <section>
-      You can import multiple components
+      Either import multiple components in one statement
     </section>
 
-    <code>import {'{'} Icon, Button, Container {'}'} from 'bootstrap-components'</code>
+    <section>
+      <code>import {curlyStart()}</code>
+    </section>
+
+    <section>
+      <code style={indent()}>Icon,</code>
+    </section>
+
+    <section>
+      <code style={indent()}>Button,</code>
+    </section>
+
+    <section>
+      <code style={indent()}>Container</code>
+    </section>
+
+    <section>
+      <code>{curlyEnd()} from 'bootstrap-components'</code>
+    </section>
 
     <section>
       Or import components individually
     </section>
 
-    <code>import Icon from 'bootstrap-components/Icon'</code>
-    <br/>
-    <code>import Button from 'bootstrap-components/Button'</code>
-    <br/>
-    <code>import Container from 'bootstrap-components/Container'</code>
+    <section>
+      <code>import Icon from 'bootstrap-components/Icon'</code>
+    </section>
+
+    <section>
+      <code>import Button from 'bootstrap-components/Button'</code>
+    </section>
+
+    <section>
+      <code>import Container from 'bootstrap-components/Container'</code>
+    </section>
 
     <Link
       to="/icons"

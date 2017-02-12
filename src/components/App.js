@@ -11,22 +11,25 @@ const styles = {
   },
   header: {
     backgroundColor: '#222',
-    height: '215px',
-    padding: '20px',
+    height: '16em',
+    margin: '6em 0 3em',
     color: '#eee',
     textAlign: 'center',
     textTransform: 'capitalize'
+  },
+  container: {
+    marginBottom: '1.5em',
+    backgroundColor: '#eee',
+    padding: '1em'
+  },
+  footer: {
+    backgroundColor: '#222',
+    height: '100%',
+    color: '#eee',
+    textAlign: 'center',
+    fontSize: '1.25em'
   }
 }
-
-// .App-header {
-//   background-color: #222;
-//   height: 215px;
-//   padding: 20px;
-//   color: white;
-//   text-align: center;
-//   text-transform: capitalize;
-// }
 
 const App = ({
   children
@@ -54,9 +57,17 @@ const App = ({
         <h3>{sectionTitle}</h3>
       </div>
 
-      <Container>
+      <Container style={styles.container}>
         {children}
       </Container>
+
+      <footer
+        style={styles.footer}
+      >
+        <a href="https://github.com/timurtu/bootstrap-components">
+          GitHub
+        </a>
+      </footer>
     </div>
   )
 }

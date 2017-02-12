@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap-components": "^1.1.4",
+    "bootstrap-components": "^1.1.7",
     "npm-run-all": "^4.0.1",
     "pushstate-server": "^2.2.1",
     "react": "^15.4.2",

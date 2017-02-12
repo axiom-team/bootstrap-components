@@ -27,6 +27,20 @@ const Icons = () => (
       <code>{'<Icon>search</Icon>'}</code>
     </section>
 
+    <section>
+      <Button>
+        <Icon>align-left</Icon>
+      </Button>
+
+      <Button>
+        <Icon>align-center</Icon>
+      </Button>
+
+      <Button>
+        <Icon>align-right</Icon>
+      </Button>
+    </section>
+
     <Link
       to="/getting-started"
       className="pull-left"
