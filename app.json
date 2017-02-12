@@ -1,0 +1,8 @@
+{
+  "name": "bootstrap-components",
+  "description": "Reactified bootstrap components",
+  "repository": "https://git.heroku.com/bootstrap-components.git",
+  "logo": "https://raw.githubusercontent.com/Mikescops/bootstrapbolttheme/master/icon-bootstrap.png",
+  "keywords": ["react", "bootstrap", "components"],
+  "image": "heroku/nodejs"
+}
