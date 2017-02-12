@@ -5,6 +5,13 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { Icon, Button } from 'bootstrap-components'
+import { indent } from '../utils'
+
+const CodeSection = (props) => (
+  <section>
+    <code {...props}>{props.children}</code>
+  </section>
+)
 
 const Icons = () => (
   <div>
@@ -23,9 +30,9 @@ const Icons = () => (
       <Icon>search</Icon>
     </section>
 
-    <section>
-      <code>{'<Icon>search</Icon>'}</code>
-    </section>
+    <CodeSection>
+      {'<Icon>search</Icon>'}
+    </CodeSection>
 
     <section>
       <Button>
@@ -44,6 +51,48 @@ const Icons = () => (
         <Icon>align-justify</Icon>
       </Button>
     </section>
+
+    <CodeSection>
+      {'<Button>'}
+    </CodeSection>
+
+    <CodeSection style={indent()}>
+      {'<Icon>left-align</Icon>'}
+    </CodeSection>
+
+    <CodeSection>
+      {'</Button>'}
+    </CodeSection>
+
+    <section>
+      <Button size="lg">
+        <Icon>star</Icon> Star
+      </Button>
+
+      <Button>
+        <Icon>star</Icon> Star
+      </Button>
+
+      <Button size="sm">
+        <Icon>star</Icon> Star
+      </Button>
+
+      <Button size="xs">
+        <Icon>star</Icon> Star
+      </Button>
+    </section>
+
+    <CodeSection>
+      {'<Button size="lg">'}
+    </CodeSection>
+
+    <CodeSection style={indent()}>
+      {'<Icon>star</Icon> Star'}
+    </CodeSection>
+
+    <CodeSection>
+      {'</Button>'}
+    </CodeSection>
 
     <Link
       to="/getting-started"

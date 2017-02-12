@@ -5,6 +5,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { Icon, Button } from 'bootstrap-components'
+import { indent } from '../utils'
 
 const styles = {
   header: {
@@ -13,9 +14,6 @@ const styles = {
 }
 const curlyStart = () => '{'
 const curlyEnd = () => '}'
-const indent = () => ({
-  marginLeft: '1em'
-})
 
 const GettingStarted = () => (
   <div>

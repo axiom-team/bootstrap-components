@@ -27,7 +27,8 @@ const styles = {
     height: '100%',
     color: '#eee',
     textAlign: 'center',
-    fontSize: '1.25em'
+    fontSize: '1.25em',
+    padding: '1em 0 3em'
   }
 }
 
