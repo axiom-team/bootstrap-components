@@ -4,8 +4,8 @@
 
 import React from 'react'
 import { Link } from 'react-router'
-// import { Icon } from 'bootstrap-components'
-import Icon from 'bootstrap-components/Icon'
+import { Icon } from 'bootstrap-components'
+// import Icon from 'bootstrap-components/Icon'
 
 const Icons = () => (
   <div>
