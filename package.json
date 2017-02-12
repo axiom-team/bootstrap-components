@@ -2,7 +2,7 @@
   "name": "demo-app",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "bootstrap-components": "^1.1.7",
     "npm-run-all": "^4.0.1",
     "pushstate-server": "^2.2.1",
