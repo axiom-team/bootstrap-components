@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, IndexRedirect, Route, browserHistory } from 'react-router'
-import App from './App'
+import App from './components/App'
 import GettingStarted from './components/GettingStarted'
 import Icons from './components/Icons'
 import './index.css'

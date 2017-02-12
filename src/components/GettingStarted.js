@@ -4,10 +4,11 @@
 
 import React from 'react'
 import { Link } from 'react-router'
+import { Icon, Button } from 'bootstrap-components'
 
 const GettingStarted = () => (
   <div>
-    <p className="App-intro">
+    <section>
       Load
       {' '}
       <a
@@ -18,9 +19,9 @@ const GettingStarted = () => (
       </a>
       {' '}
       in your <code>index.html</code>.
-    </p>
+    </section>
 
-    <p className="App-intro">
+    <section>
       Bootstrap's JavaScript require's
       {' '}
       <a
@@ -29,17 +30,17 @@ const GettingStarted = () => (
       >
         JQuery
       </a>.
-    </p>
+    </section>
 
-    <p className="App-intro">
+    <section>
       You can import multiple components
-    </p>
+    </section>
 
     <code>import {'{'} Icon, Button, Container {'}'} from 'bootstrap-components'</code>
 
-    <p className="App-intro">
+    <section>
       Or import components individually
-    </p>
+    </section>
 
     <code>import Icon from 'bootstrap-components/Icon'</code>
     <br/>
@@ -49,13 +50,13 @@ const GettingStarted = () => (
 
     <Link
       to="/icons"
-      className="btn btn-default pull-right"
+      className="pull-right"
     >
-      Icons
-      {' '}
-      <span
-        className="glyphicon glyphicon-arrow-right"
-      />
+      <Button>
+        Icons
+        {' '}
+        <Icon>arrow-right</Icon>
+      </Button>
     </Link>
   </div>
 )

@@ -4,12 +4,11 @@
 
 import React from 'react'
 import { Link } from 'react-router'
-import Icon from 'bootstrap-components/Icon'
+import { Icon, Button } from 'bootstrap-components'
 
 const Icons = () => (
   <div>
-
-    <p className="App-intro">
+    <section>
       Use any
       {' '}
       <a
@@ -18,21 +17,23 @@ const Icons = () => (
       >
         Bootstrap glyphicon
       </a>
-    </p>
+    </section>
 
-    <p className="App-intro">
+    <section>
       <Icon>search</Icon>
-    </p>
+    </section>
 
-    <p className="App-intro">
+    <section>
       <code>{'<Icon>search</Icon>'}</code>
-    </p>
+    </section>
 
     <Link
       to="/getting-started"
-      className="btn btn-default pull-left"
+      className="pull-left"
     >
-      <Icon>arrow-left</Icon> Getting started
+      <Button>
+        <Icon>arrow-left</Icon> Getting started
+      </Button>
     </Link>
   </div>
 )
