@@ -4,9 +4,8 @@
 
 import React from 'react'
 import { Link } from 'react-router'
+import Code from './Code'
 import { Icon, Button } from 'bootstrap-components'
-import CodeSection from './CodeSection'
-import { indent } from '../utils'
 
 const Icons = () => (
   <div>
@@ -22,79 +21,80 @@ const Icons = () => (
         </a>
       </section>
 
-      <hr/>
+      <div className="row">
+        <div className="col-sm-6">
+          <section>
+            <Icon>search</Icon>
+          </section>
+        </div>
 
-      <Icon>search</Icon>
-
-      <div className="pull-right">
-        <CodeSection>
-          {'<Icon>search</Icon>'}
-        </CodeSection>
+        <div className="col-sm-6">
+          <Code>
+            {'<Icon>search</Icon>'}
+          </Code>
+        </div>
       </div>
     </main>
 
 
     <main>
-      <Button>
-        <Icon>align-left</Icon>
-      </Button>
 
-      <Button>
-        <Icon>align-center</Icon>
-      </Button>
+      <div className="row">
+        <div className="col-sm-6">
+          <Button>
+            <Icon>align-left</Icon>
+          </Button>
 
-      <Button>
-        <Icon>align-right</Icon>
-      </Button>
+          <Button>
+            <Icon>align-center</Icon>
+          </Button>
 
-      <Button>
-        <Icon>align-justify</Icon>
-      </Button>
+          <Button>
+            <Icon>align-right</Icon>
+          </Button>
 
-      <div className="pull-right">
-        <CodeSection>
-          {'<Button>'}
-        </CodeSection>
+          <Button>
+            <Icon>align-justify</Icon>
+          </Button>
+        </div>
 
-        <CodeSection style={indent()}>
-          {'<Icon>left-align</Icon>'}
-        </CodeSection>
-
-        <CodeSection>
-          {'</Button>'}
-        </CodeSection>
+        <div className="col-sm-6">
+          <Code>
+{`<Button>
+  <Icon>left-align</Icon>
+</Button>`}
+          </Code>
+        </div>
       </div>
     </main>
 
     <main>
-      <Button size="lg">
-        <Icon>star</Icon> Star
-      </Button>
+      <div className="row">
+        <div className="col-sm-6">
+          <Button size="lg">
+            <Icon>star</Icon> Star
+          </Button>
 
-      <Button>
-        <Icon>star</Icon> Star
-      </Button>
+          <Button>
+            <Icon>star</Icon> Star
+          </Button>
 
-      <Button size="sm">
-        <Icon>star</Icon> Star
-      </Button>
+          <Button size="sm">
+            <Icon>star</Icon> Star
+          </Button>
 
-      <Button size="xs">
-        <Icon>star</Icon> Star
-      </Button>
+          <Button size="xs">
+            <Icon>star</Icon> Star
+          </Button>
+        </div>
 
-      <div className="pull-right">
-        <CodeSection>
-          {'<Button size="lg">'}
-        </CodeSection>
-
-        <CodeSection style={indent()}>
-          {'<Icon>star</Icon> Star'}
-        </CodeSection>
-
-        <CodeSection>
-          {'</Button>'}
-        </CodeSection>
+        <div className="col-sm-6">
+          <Code>
+{`<Button size="lg">
+  <Icon>star</Icon> Star
+</Button>`}
+          </Code>
+        </div>
       </div>
     </main>
 

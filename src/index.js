@@ -14,21 +14,12 @@ ReactDOM.render(
       window.scrollTo(0, 0)
     }}
   >
-    <Route
-      path="/"
-      component={App}
-    >
+    <Route path="/" component={App}>
       <IndexRedirect to="getting-started"/>
 
-      <Route
-        path="getting-started"
-        component={GettingStarted}
-      />
+      <Route path="getting-started" component={GettingStarted}/>
 
-      <Route
-        path="icons"
-        component={Icons}
-      />
+      <Route path="icons" component={Icons}/>
     </Route>
   </Router>,
   document.getElementById('root')

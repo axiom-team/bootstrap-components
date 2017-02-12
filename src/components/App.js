@@ -50,7 +50,7 @@ const App = ({
 
           style={styles.logo}
 
-          alt="logo"
+          alt="Rotating React logo"
         />
 
         <h2>Bootstrap Components</h2>
@@ -62,9 +62,7 @@ const App = ({
         {children}
       </Container>
 
-      <footer
-        style={styles.footer}
-      >
+      <footer style={styles.footer}>
         <a href="https://github.com/timurtu/bootstrap-components">
           GitHub
         </a>

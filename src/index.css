@@ -5,11 +5,11 @@ body {
 
 main {
     font-size: 1.5em;
-    margin: 0 0 26em;
+    margin-bottom: 12em;
 }
 
 section {
-    margin: .5em 0;
+    margin: 1em 0;
 }
 
 @keyframes logo-spin {
