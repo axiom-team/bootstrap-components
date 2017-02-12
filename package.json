@@ -16,6 +16,7 @@
   "scripts": {
     "prod": "npm-run-all build serve:prod",
     "serve:prod": "pushstate-server build",
+    "push": "mv ./build ../bootstrap-components-server",
     "dev": "webpack-dev-server --quiet --open",
     "start": "react-scripts start",
     "build": "react-scripts build",
