@@ -9,6 +9,24 @@ import { Icon } from 'bootstrap-components'
 const Icons = () => (
   <div>
 
+    <p className="App-intro">
+      Use any
+      {' '}
+      <a
+        href="http://getbootstrap.com/components/#glyphicons"
+        target="_blank"
+      >
+        Bootstrap glyphicon
+      </a>
+    </p>
+
+    <p className="App-intro">
+      <Icon>search</Icon>
+    </p>
+
+    <p className="App-intro">
+      <code>{'<Icon>search</Icon>'}</code>
+    </p>
 
     <Link
       to="/getting-started"
