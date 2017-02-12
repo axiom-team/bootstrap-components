@@ -6,6 +6,11 @@ import React from 'react'
 import { Link } from 'react-router'
 import { Icon, Button } from 'bootstrap-components'
 
+const styles = {
+  header: {
+    margin: '1em .75em'
+  }
+}
 const curlyStart = () => '{'
 const curlyEnd = () => '}'
 const indent = () => ({
@@ -14,6 +19,9 @@ const indent = () => ({
 
 const GettingStarted = () => (
   <div>
+
+    <h1 style={styles.header}>Prerequisite</h1>
+
     <section>
       Load
       {' '}
@@ -37,6 +45,16 @@ const GettingStarted = () => (
         JQuery
       </a>.
     </section>
+
+    <h1 style={styles.header}>Install</h1>
+
+    <section>Install with npm</section>
+
+    <section>
+      <code>npm install --save bootstrap-components</code>
+    </section>
+
+    <h1 style={styles.header}>Import</h1>
 
     <section>
       Either import multiple components in one statement

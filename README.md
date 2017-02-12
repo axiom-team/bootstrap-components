@@ -6,7 +6,7 @@
 
 ## Install
 ```
-npm install bootstrap-components
+npm install --save bootstrap-components
 ```
 
 ## Run the demo app locally

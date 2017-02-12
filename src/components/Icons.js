@@ -39,6 +39,10 @@ const Icons = () => (
       <Button>
         <Icon>align-right</Icon>
       </Button>
+
+      <Button>
+        <Icon>align-justify</Icon>
+      </Button>
     </section>
 
     <Link
