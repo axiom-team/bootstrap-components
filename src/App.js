@@ -24,13 +24,9 @@ const App = ({
           alt="logo"
         />
 
-        <h2>
-          Bootstrap Components
-        </h2>
+        <h2>Bootstrap Components</h2>
 
-        <h3>
-          {sectionTitle}
-        </h3>
+        <h3>{sectionTitle}</h3>
       </div>
 
       <div className="container">

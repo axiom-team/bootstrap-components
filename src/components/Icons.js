@@ -4,8 +4,7 @@
 
 import React from 'react'
 import { Link } from 'react-router'
-import { Icon } from 'bootstrap-components'
-// import Icon from 'bootstrap-components/Icon'
+import Icon from 'bootstrap-components/Icon'
 
 const Icons = () => (
   <div>
@@ -33,7 +32,7 @@ const Icons = () => (
       to="/getting-started"
       className="btn btn-default pull-left"
     >
-      <span className="glyphicon glyphicon-arrow-left"/> Getting started
+      <Icon>arrow-left</Icon> Getting started
     </Link>
   </div>
 )

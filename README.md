@@ -2,7 +2,7 @@
 
 ### Reactified Bootstrap components
 
-- [Demo app/documentation](https://bootstrap-components.herokuapp.com)
+- [Demo app/documentation](http://getbootstrapcomponents.tk/)
 
 ## Install
 ```
