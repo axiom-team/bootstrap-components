@@ -3,18 +3,25 @@
  */
 
 import React from 'react'
+import ReactGA from 'react-ga'
 import { Router, IndexRedirect, Route, browserHistory } from 'react-router'
 import App from './App'
 import GettingStarted from './GettingStarted'
 import Icons from './Icons'
 
+ReactGA.initialize('UA-91838823-1')
+
+function onChange() {
+  window.scrollTo(0, 0)
+  ReactGA.set({ page: window.location.pathname })
+  ReactGA.pageview(window.location.pathname)
+}
+
+
 const Root = () => (
   <Router
     history={browserHistory}
-
-    onUpdate={() => {
-      window.scrollTo(0, 0)
-    }}
+    onUpdate={onChange}
   >
     <Route path="/" component={App}>
       <IndexRedirect to="getting-started"/>

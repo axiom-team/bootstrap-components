@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../res/logo.svg'
+// import Navbar from './Navbar'
 import Container from 'bootstrap-components/Container'
 
 const pathToTitle = str => str.slice(1).split('-').join(' ')
@@ -44,6 +45,9 @@ const App = ({
 
   return (
     <div>
+
+      {/*<Navbar/>*/}
+
       <div style={styles.header}>
         <img
           src={logo}
