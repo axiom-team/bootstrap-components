@@ -13,4 +13,4 @@ npm install --save bootstrap-components
 - `git clone https://github.com/timurtu/bootstrap-components`
 - `cd bootstrap-components`
 - `npm install`
-- `npm start`
+- `npm run dev`

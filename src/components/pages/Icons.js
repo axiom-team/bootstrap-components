@@ -3,7 +3,6 @@
  */
 
 import React from 'react'
-import { Link } from 'react-router'
 import Code from '../Code'
 import Arrow from '../Arrow'
 import { Icon, Button, Alert } from 'bootstrap-components'

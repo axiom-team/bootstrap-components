@@ -71,6 +71,7 @@ const Navbar = () => (
 
         <ul className="nav navbar-nav navbar-right">
           <Tab>icons</Tab>
+          <Tab>dropdowns</Tab>
         </ul>
       </div>
     </Container>
