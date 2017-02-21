@@ -4,7 +4,8 @@
 
 import React from 'react'
 import { Link } from 'react-router'
-import Code from './Code'
+import Code from '../Code'
+import Arrow from '../Arrow'
 import { Icon, Button } from 'bootstrap-components'
 
 
@@ -34,17 +35,19 @@ const GettingStarted = () => (
       </div>
     </main>
 
-    <main className="row">
-      <div className="col-sm-6">
-        <h1>Install</h1>
+    <main>
+      <div className="row">
+        <div className="col-sm-6">
+          <h1>Install</h1>
 
-        <section>Install with npm</section>
-      </div>
+          <section>Install with npm</section>
+        </div>
 
-      <div className="col-sm-6">
-        <Code language="bash">
-          {'npm install --save bootstrap-components'}
-        </Code>
+        <div className="col-sm-6">
+          <Code language="bash">
+            {'npm install --save bootstrap-components'}
+          </Code>
+        </div>
       </div>
     </main>
 
@@ -61,7 +64,7 @@ const GettingStarted = () => (
         <div className="col-sm-6">
 
           <Code language="javascript">
-{`import {
+            {`import {
   Icon,
   Button,
   Container
@@ -81,7 +84,7 @@ const GettingStarted = () => (
 
         <div className="col-sm-6">
           <Code language="javascript">
-{`import Icon from 'bootstrap-components/Icon'
+            {`import Icon from 'bootstrap-components/Icon'
 import Button from 'bootstrap-components/Button'
 import Container from 'bootstrap-components/Container'`}
           </Code>
@@ -89,16 +92,7 @@ import Container from 'bootstrap-components/Container'`}
       </div>
     </main>
 
-    <Link
-      to="/icons"
-      className="pull-right"
-    >
-      <Button>
-        Icons
-        {' '}
-        <Icon>arrow-right</Icon>
-      </Button>
-    </Link>
+    <Arrow direction='right'>icons</Arrow>
   </div>
 )
 

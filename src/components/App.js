@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../res/logo.svg'
-// import Navbar from './Navbar'
+import Navbar from './Navbar'
 import Container from 'bootstrap-components/Container'
 
 const pathToTitle = str => str.slice(1).split('-').join(' ')
@@ -45,19 +45,16 @@ const App = ({
 
   return (
     <div>
-
-      {/*<Navbar/>*/}
+      <Navbar/>
 
       <div style={styles.header}>
         <img
           src={logo}
-
           style={styles.logo}
-
           alt="Rotating React logo"
         />
 
-        <h2>Bootstrap Components</h2>
+        <h2>React Bootstrap Components</h2>
 
         <h3>{sectionTitle}</h3>
       </div>
