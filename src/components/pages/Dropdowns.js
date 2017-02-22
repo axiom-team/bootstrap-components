@@ -9,28 +9,27 @@ import Code from '../Code'
 
 const Dropdowns = () => (
   <div>
-
     <main>
       <div className="row">
         <div className="col-sm-6">
-          <Dropdown
-            items={[
-              { text: 'Action' },
-              { text: 'Another action' },
-              { text: 'Something else here' },
-              { separator: true },
-              { text: 'Separated link' },
-              {
-                text: 'Icons page',
-                to: '/icons'
-              }
-            ]}
-          >
-            Dropdown
+          <Dropdown title='Dropdown'>
+            <div>Action</div>
+
+            <div>Another Action</div>
+
+            <div>Something else here</div>
+
+            <div separator={true}/>
+
+            <div>Separated link</div>
+
+            <div to="/icons">
+              Icons page
+            </div>
           </Dropdown>
 
           <section>
-            The to prop uses
+            The <code>to</code> prop uses
             {' '}
             <a
               target="_blank"
@@ -43,20 +42,20 @@ const Dropdowns = () => (
 
         <div className="col-sm-6">
           <Code>
-            {`<Dropdown
-  items={[
-    { text: 'Action' },
-    { text: 'Another action' },
-    { text: 'Something else here' },
-    { separator: true },
-    { text: 'Separated link' },
-    {
-      text: 'Icons page',
-      to: '/icons'
-    }
-  ]}
->
-  Dropdown
+            {`<Dropdown title='Dropdown'>
+  <div>Action</div>
+
+  <div>Another Action</div>
+
+  <div>Something else here</div>
+
+  <div separator={true}/>
+
+  <div>Separated link</div>
+
+  <div to="/icons">
+    Icons page
+  </div>
 </Dropdown>`}
           </Code>
         </div>
@@ -67,22 +66,20 @@ const Dropdowns = () => (
       <div className="row">
         <div className="col-sm-6">
           <Dropdown
+            title={<span>Dropup</span>}
             dropup={true}
-
-            useAnchors={true}
-
-            items={[
-              { text: 'Action' },
-              { text: 'Another action' },
-              { text: 'Something else here' },
-              { separator: true },
-              {
-                text: 'Getting started page',
-                to: '/getting-started'
-              }
-            ]}
           >
-            Dropup
+            <div>Action</div>
+
+            <div>Another Action</div>
+
+            <div>Something else here</div>
+
+            <div separator={true}/>
+
+            <div href="/getting-started">
+              Getting started page
+            </div>
           </Dropdown>
 
           <section>
@@ -93,20 +90,20 @@ const Dropdowns = () => (
         <div className="col-sm-6">
           <Code>
             {`<Dropdown
+  title='Dropup'
   dropup={true}
-
-  items={[
-    { text: 'Action' },
-    { text: 'Another action' },
-    { text: 'Something else here' },
-    { separator: true },
-    {
-      text: 'Getting started page',
-      href: '/getting-started'
-    }
-  ]}
 >
-  Dropup
+  <div>Action</div>
+
+  <div>Another Action</div>
+
+  <div>Something else here</div>
+
+  <div separator={true}/>
+
+  <div href="/getting-started">
+    Getting started page
+  </div>
 </Dropdown>`}
           </Code>
         </div>
