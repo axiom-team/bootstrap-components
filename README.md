@@ -12,5 +12,5 @@ npm install --save bootstrap-components
 ## Run the demo app locally
 - `git clone https://github.com/timurtu/bootstrap-components`
 - `cd bootstrap-components`
-- `npm install`
-- `npm run dev`
+- `yarn install`
+- `yarn dev`
