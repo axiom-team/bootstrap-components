@@ -30,7 +30,7 @@ const Dropdowns = () => (
           </Dropdown>
 
           <section>
-            By default, links work with
+            The to prop uses
             {' '}
             <a
               target="_blank"
@@ -57,6 +57,56 @@ const Dropdowns = () => (
   ]}
 >
   Dropdown
+</Dropdown>`}
+          </Code>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <div className="row">
+        <div className="col-sm-6">
+          <Dropdown
+            dropup={true}
+
+            useAnchors={true}
+
+            items={[
+              { text: 'Action' },
+              { text: 'Another action' },
+              { text: 'Something else here' },
+              { separator: true },
+              {
+                text: 'Getting started page',
+                to: '/getting-started'
+              }
+            ]}
+          >
+            Dropup
+          </Dropdown>
+
+          <section>
+            The <code>href</code> prop uses an anchor tag
+          </section>
+        </div>
+
+        <div className="col-sm-6">
+          <Code>
+            {`<Dropdown
+  dropup={true}
+
+  items={[
+    { text: 'Action' },
+    { text: 'Another action' },
+    { text: 'Something else here' },
+    { separator: true },
+    {
+      text: 'Getting started page',
+      href: '/getting-started'
+    }
+  ]}
+>
+  Dropup
 </Dropdown>`}
           </Code>
         </div>

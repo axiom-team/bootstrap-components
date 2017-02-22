@@ -30,6 +30,9 @@ const styles = {
     textAlign: 'center',
     fontSize: '1.25em',
     padding: '1em 0 3em'
+  },
+  mainTitle: {
+    margin: '.25em 1em'
   }
 }
 
@@ -54,7 +57,7 @@ const App = ({
           alt="Rotating React logo"
         />
 
-        <h2>React Bootstrap Components</h2>
+        <h2 style={styles.mainTitle}>React Bootstrap Components</h2>
 
         <h3>{sectionTitle}</h3>
       </div>

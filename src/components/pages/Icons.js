@@ -10,21 +10,21 @@ import { Icon, Button, Alert } from 'bootstrap-components'
 const Icons = () => (
   <div>
     <main>
-      <section>
-        Use any
-        {' '}
-        <a
-          href="http://getbootstrap.com/components/#glyphicons"
-          target="_blank"
-        >
-          Bootstrap glyphicon
-        </a>
-      </section>
-
       <div className="row">
         <div className="col-sm-6">
           <section>
             <Icon>search</Icon>
+          </section>
+
+          <section>
+            Use any
+            {' '}
+            <a
+              href="http://getbootstrap.com/components/#glyphicons"
+              target="_blank"
+            >
+              Bootstrap glyphicon
+            </a>
           </section>
         </div>
 
