@@ -11,11 +11,13 @@ const $ = window.$
 const styles = {
   tab: {
     textTransform: 'capitalize'
+  },
+  navbar: {
+    margin: '0'
   }
 }
 
 const hideNav = () => $('.collapse').collapse('hide')
-
 
 const Tab = (props, { router }) => {
   const to = `/${props.children.split(' ').join('-')}`
@@ -40,7 +42,10 @@ Tab.contextTypes = {
 }
 
 const Navbar = () => (
-  <div className="navbar navbar-default">
+  <div
+    className="navbar navbar-default"
+    style={styles.navbar}
+  >
     <Container>
       <div className="navbar-header">
         <button

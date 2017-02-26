@@ -35,6 +35,6 @@
     "webpack-dev-server": "^2.1.0-beta.0"
   },
   "dependencies": {
-    "bootstrap-components": "^1.1.38"
+    "bootstrap-components": "^1.1.46"
   }
 }

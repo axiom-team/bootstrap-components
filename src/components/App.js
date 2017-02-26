@@ -1,22 +1,20 @@
 import React from 'react'
-import logo from '../../res/logo.svg'
+import logo from '../../res/rings.svg'
 import Navbar from './Navbar'
 import Container from 'bootstrap-components/Container'
 
 const pathToTitle = str => str.slice(1).split('-').join(' ')
 
 const styles = {
-  logo: {
-    animation: 'logo-spin infinite 20s linear',
-    height: '80px'
-  },
   header: {
     backgroundColor: '#222',
-    height: '16em',
-    margin: '6em 0 3em',
     color: '#eee',
     textAlign: 'center',
-    textTransform: 'capitalize'
+    textTransform: 'capitalize',
+    margin: '2em 0 3.5em'
+  },
+  mainTitle: {
+    padding: '0 .5em'
   },
   container: {
     marginBottom: '1.5em',
@@ -24,15 +22,8 @@ const styles = {
     padding: '2.5em'
   },
   footer: {
-    backgroundColor: '#222',
-    height: '100%',
-    color: '#eee',
-    textAlign: 'center',
     fontSize: '1.25em',
-    padding: '1em 0 3em'
-  },
-  mainTitle: {
-    margin: '.25em 1em'
+    padding: '2em 1em 3.5em'
   }
 }
 
@@ -54,10 +45,11 @@ const App = ({
         <img
           src={logo}
           style={styles.logo}
-          alt="Rotating React logo"
         />
 
-        <h2 style={styles.mainTitle}>React Bootstrap Components</h2>
+        <h2 style={styles.mainTitle}>
+          React Bootstrap Components
+        </h2>
 
         <h3>{sectionTitle}</h3>
       </div>
@@ -66,8 +58,14 @@ const App = ({
         {children}
       </Container>
 
-      <footer style={styles.footer}>
-        <a href="https://github.com/timurtu/bootstrap-components">
+      <footer
+        className="container"
+        style={styles.footer}
+      >
+        <a
+          className="pull-left"
+          href="https://github.com/timurtu/bootstrap-components"
+        >
           GitHub
         </a>
       </footer>
