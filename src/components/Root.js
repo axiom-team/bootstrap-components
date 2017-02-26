@@ -24,10 +24,24 @@ const Root = () => (
     onUpdate={onChange}
   >
     <Route path="/" component={App}>
-      <IndexRedirect to="getting-started"/>
-      <Route path="getting-started" component={GettingStarted}/>
-      <Route path="icons" component={Icons}/>
-      <Route path="dropdowns" component={Dropdowns}/>
+      <IndexRedirect
+        to="/getting-started"
+      />
+
+      <Route
+        path="getting-started"
+        component={GettingStarted}
+      />
+
+      <Route
+        path="icons"
+        component={Icons}
+      />
+
+      <Route
+        path="dropdowns"
+        component={Dropdowns}
+      />
     </Route>
   </Router>
 )

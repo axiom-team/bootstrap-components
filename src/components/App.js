@@ -1,5 +1,7 @@
 import React from 'react'
-import logo from '../../res/rings.svg'
+import reactLogo from '../../res/react.svg'
+import bootstrapLogo from '../../res/bootstrap.svg'
+import plusIcon from '../../res/plus3.svg'
 import Navbar from './Navbar'
 import Container from 'bootstrap-components/Container'
 
@@ -14,7 +16,7 @@ const styles = {
     margin: '2em 0 3.5em'
   },
   mainTitle: {
-    padding: '0 .5em'
+    padding: '1em 2em'
   },
   container: {
     marginBottom: '1.5em',
@@ -24,8 +26,38 @@ const styles = {
   footer: {
     fontSize: '1.25em',
     padding: '2em 1em 3.5em'
+  },
+  logo: {
+    height: '4em',
+    margin: '1.5em .75em 2em'
+  },
+  plus: {
+    height: '2em',
+    margin: '1em'
   }
 }
+
+const MainLogo = () => (
+  <div>
+    <img
+      style={styles.logo}
+      src={reactLogo}
+      alt="React Logo"
+    />
+
+    <img
+      style={styles.plus}
+      src={plusIcon}
+      alt="Plus Icon"
+    />
+
+    <img
+      style={styles.logo}
+      src={bootstrapLogo}
+      alt="Bootstrap logo"
+    />
+  </div>
+)
 
 const App = ({
   children
@@ -42,14 +74,11 @@ const App = ({
       <Navbar/>
 
       <div style={styles.header}>
-        <img
-          src={logo}
-          style={styles.logo}
-        />
-
         <h2 style={styles.mainTitle}>
           React Bootstrap Components
         </h2>
+
+        <MainLogo/>
 
         <h3>{sectionTitle}</h3>
       </div>

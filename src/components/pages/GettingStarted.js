@@ -3,11 +3,8 @@
  */
 
 import React from 'react'
-import { Link } from 'react-router'
 import Code from '../Code'
 import Arrow from '../Arrow'
-import { Icon, Button } from 'bootstrap-components'
-
 
 const GettingStarted = () => (
   <div>

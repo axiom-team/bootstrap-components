@@ -5,6 +5,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import Container from 'bootstrap-components/Container'
+import logo from '../../res/react-bootstrap.svg'
 
 const $ = window.$
 
@@ -14,6 +15,14 @@ const styles = {
   },
   navbar: {
     margin: '0'
+  },
+  logo: {
+    container: {
+      margin: '-.4em 0'
+    },
+    image: {
+      height: '2em'
+    }
   }
 }
 
@@ -62,11 +71,17 @@ const Navbar = () => (
 
         <Link
           className="navbar-brand"
+          style={styles.logo.container}
           to="/getting-started"
           onClick={hideNav}
         >
-          Bootstrap Components
+          <img
+            src={logo}
+            style={styles.logo.image}
+            alt="React Bootstrap Components Logo"
+          />
         </Link>
+
       </div>
 
       <div className="collapse navbar-collapse" id="nav-collapse">
