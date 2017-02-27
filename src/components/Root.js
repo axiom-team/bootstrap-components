@@ -14,11 +14,6 @@ let currentPage
 function onChange() {
 
   if (currentPage && currentPage !== window.location.pathname) {
-
-    const foo = console
-
-    foo.log(currentPage, window.location.pathname)
-
     window.scrollTo(0, 0)
   }
 

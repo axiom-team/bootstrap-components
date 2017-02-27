@@ -86,6 +86,90 @@ const Dropdowns = () => (
       </div>
     </main>
 
+    <main>
+      <div className="row">
+        <div className="col-sm-6">
+          <Dropdown title="Dropdown">
+            <header>Dropdown header</header>
+            <div>Action</div>
+            <div>Another Action</div>
+            <div>Something else here</div>
+            <header>Dropdown header</header>
+            <div>Separated link</div>
+          </Dropdown>
+
+          <section>
+            Dropdown headers can be used to label separate groups of links
+          </section>
+        </div>
+
+        <div className="col-sm-6">
+          <Code>
+            {`<Dropdown>
+  ...
+  <header>Dropdown header</header>
+  ...
+</Dropdown>`}
+          </Code>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <div className="row">
+        <div className="col-sm-6">
+          <Dropdown title="Dropdown">
+            <div>Action</div>
+            <div>Another Action</div>
+            <div>Something else here</div>
+            <hr/>
+            <div>Separated link</div>
+          </Dropdown>
+
+          <section>
+            Dividers can help separate different links
+          </section>
+        </div>
+
+        <div className="col-sm-6">
+          <Code>
+            {`<Dropdown>
+  ...
+  <hr/>
+  ...
+</Dropdown>`}
+          </Code>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <div className="row">
+        <div className="col-sm-6">
+          <Dropdown title="Dropdown">
+            <div>Regular link</div>
+            <div disabled>Disabled link</div>
+            <div>Another link</div>
+          </Dropdown>
+
+          <section>
+            Disable menu items to prevent the user from interacting with them
+          </section>
+        </div>
+        <div className="col-sm-6">
+          <Code>
+            {`<Dropdown>
+  <div>Regular link</div>
+  <div disabled>
+    Disabled link
+  </div>
+  <div>Another link</div>
+</Dropdown>`}
+          </Code>
+        </div>
+      </div>
+    </main>
+
     <Arrow direction='left'>icons</Arrow>
   </div>
 )

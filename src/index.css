@@ -9,12 +9,15 @@ main {
 }
 
 main, main section {
-    margin: 1em 0;
     font-family: 'Merriweather', serif;
 }
 
 main section div {
     font-family: sans-serif;
+}
+
+section {
+    margin: 1em 0;
 }
 
 @keyframes logo-spin {
