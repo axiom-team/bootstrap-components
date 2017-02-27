@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const paths = require('./paths')
 
 module.exports = {
   entry: [
@@ -10,16 +11,16 @@ module.exports = {
   ],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    path: paths.pub,
     publicPath: '/'
   },
-  context: path.resolve(__dirname, 'src'),
+  context: paths.src,
 
   devtool: 'inline-source-map',
 
   devServer: {
     hot: true,
-    contentBase: path.resolve(__dirname, 'public'),
+    contentBase: paths.pub,
     publicPath: '/',
     historyApiFallback: true
   },

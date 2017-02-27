@@ -1,7 +1,7 @@
 import React from 'react'
 import reactLogo from '../../res/react.svg'
 import bootstrapLogo from '../../res/bootstrap.svg'
-import plusIcon from '../../res/plus3.svg'
+import plusIcon from '../../res/plus.svg'
 import Navbar from './Navbar'
 import Container from 'bootstrap-components/Container'
 
@@ -13,27 +13,31 @@ const styles = {
     color: '#eee',
     textAlign: 'center',
     textTransform: 'capitalize',
-    margin: '2em 0 3.5em'
+    margin: '2em 0 3.5em',
+    fontFamily: '"Chewy", cursive'
   },
   mainTitle: {
-    padding: '1em 2em'
+    padding: '.5em',
+    fontSize: '2.25em',
+    fontFamily: '"Passion One", cursive',
+  },
+  logo: {
+    height: '4em',
+    margin: '1em .75em 2em'
+  },
+  plus: {
+    height: '2em',
+    margin: '1em 1em 2em'
   },
   container: {
     marginBottom: '1.5em',
     backgroundColor: '#eee',
-    padding: '2.5em'
+    padding: '2.5em',
+    fontFamily: '"Merriweather", serif'
   },
   footer: {
     fontSize: '1.25em',
     padding: '2em 1em 3.5em'
-  },
-  logo: {
-    height: '4em',
-    margin: '1.5em .75em 2em'
-  },
-  plus: {
-    height: '2em',
-    margin: '1em'
   }
 }
 
@@ -60,10 +64,10 @@ const MainLogo = () => (
 )
 
 const App = ({
-  children
-}, {
-  router
-}) => {
+               children
+             }, {
+               router
+             }) => {
 
   const sectionTitle = pathToTitle(
     router.getCurrentLocation().pathname

@@ -21,9 +21,7 @@ const Code = ({
 }) => (
   <SyntaxHighlighter
     language={language ? language : 'html'}
-
     style={rainbow}
-
     customStyle={styles.code}
   >
     {children}
