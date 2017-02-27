@@ -33,10 +33,10 @@ const GettingStarted = () => (
     </main>
 
     <main>
+      <h1>Install</h1>
+
       <div className="row">
         <div className="col-sm-6">
-          <h1>Install</h1>
-
           <section>Install with npm</section>
         </div>
 

@@ -15,11 +15,12 @@ npm install --save bootstrap-components
 yarn add bootstrap-components
 ```
 
-
 ## Start the demo app
-- `git clone https://github.com/timurtu/bootstrap-components`
-- `cd bootstrap-components`
-- `yarn install`
+```
+git clone https://github.com/timurtu/bootstrap-components
+cd bootstrap-components
+yarn install
+```
 
 ### Development mode
 - `yarn start`
