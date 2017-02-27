@@ -4,46 +4,35 @@
 
 import React from 'react'
 import ReactGA from 'react-ga'
-import { Router, IndexRedirect, Route, browserHistory } from 'react-router'
-import App from './App'
-import GettingStarted from './pages/GettingStarted'
-import Icons from './pages/Icons'
-import Dropdowns from './pages/Dropdowns'
+import { Router, browserHistory } from 'react-router'
+import routes from '../routes'
 
 ReactGA.initialize('UA-91838823-1')
 
+let currentPage
+
 function onChange() {
-  window.scrollTo(0, 0)
-  ReactGA.set({ page: window.location.pathname })
-  ReactGA.pageview(window.location.pathname)
+
+  if (currentPage && currentPage !== window.location.pathname) {
+
+    const foo = console
+
+    foo.log(currentPage, window.location.pathname)
+
+    window.scrollTo(0, 0)
+  }
+
+  currentPage = window.location.pathname
+  ReactGA.set({ page: currentPage })
+  ReactGA.pageview(currentPage)
 }
 
 const Root = () => (
   <Router
     history={browserHistory}
     onUpdate={onChange}
-  >
-    <Route path="/" component={App}>
-      <IndexRedirect
-        to="/getting-started"
-      />
-
-      <Route
-        path="getting-started"
-        component={GettingStarted}
-      />
-
-      <Route
-        path="icons"
-        component={Icons}
-      />
-
-      <Route
-        path="dropdowns"
-        component={Dropdowns}
-      />
-    </Route>
-  </Router>
+    routes={routes}
+  />
 )
 
 export default Root

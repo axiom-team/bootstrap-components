@@ -119,7 +119,6 @@ const App = ({ children }, { router }) => {
           Timur Uzel
         </a>.
 
-
         <a
           className="pull-right"
           href="https://npmjs.com/packages/bootstrap-components"

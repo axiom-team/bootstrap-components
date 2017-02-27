@@ -14,15 +14,10 @@ const Dropdowns = () => (
         <div className="col-sm-6">
           <Dropdown title='Dropdown'>
             <div>Action</div>
-
             <div>Another Action</div>
-
             <div>Something else here</div>
-
-            <div separator={true}/>
-
+            <hr/>
             <div>Separated link</div>
-
             <div to="/icons">
               Icons page
             </div>
@@ -44,15 +39,10 @@ const Dropdowns = () => (
           <Code>
             {`<Dropdown title='Dropdown'>
   <div>Action</div>
-
   <div>Another Action</div>
-
   <div>Something else here</div>
-
-  <div separator={true}/>
-
+  <hr/>
   <div>Separated link</div>
-
   <div to="/icons">
     Icons page
   </div>
@@ -65,18 +55,11 @@ const Dropdowns = () => (
     <main>
       <div className="row">
         <div className="col-sm-6">
-          <Dropdown
-            title={<span>Dropup</span>}
-            dropup={true}
-          >
+          <Dropdown title='Dropup' dropup>
             <div>Action</div>
-
             <div>Another Action</div>
-
             <div>Something else here</div>
-
-            <div separator={true}/>
-
+            <hr/>
             <div href="/getting-started">
               Getting started page
             </div>
@@ -89,18 +72,11 @@ const Dropdowns = () => (
 
         <div className="col-sm-6">
           <Code>
-            {`<Dropdown
-  title='Dropup'
-  dropup={true}
->
+            {`<Dropdown title='Dropup' dropup>
   <div>Action</div>
-
   <div>Another Action</div>
-
   <div>Something else here</div>
-
-  <div separator={true}/>
-
+  <hr/>
   <div href="/getting-started">
     Getting started page
   </div>
