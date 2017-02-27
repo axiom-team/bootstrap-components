@@ -1,7 +1,5 @@
-# Bootstrap components
-
-### Reactified Bootstrap components
-
+# Bootstrap components [getreactbootstrap.com](https://getreactbootstrap.com/)
+## Reactified Bootstrap components
 [Demo app and documentation](https://getreactbootstrap.com/)
 
 ## Install
