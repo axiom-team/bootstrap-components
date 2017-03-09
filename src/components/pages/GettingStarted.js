@@ -3,8 +3,7 @@
  */
 
 import React from 'react'
-import Code from '../Code'
-import Arrow from '../Arrow'
+import { Code, Arrow } from '../'
 
 const GettingStarted = () => (
   <div>
@@ -69,9 +68,7 @@ const GettingStarted = () => (
           </Code>
         </div>
       </div>
-    </main>
 
-    <main>
       <div className="row">
         <div className="col-sm-6">
           <section>

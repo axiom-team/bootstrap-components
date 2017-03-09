@@ -4,16 +4,15 @@
 
 import React from 'react'
 import { Link } from 'react-router'
-import Container from 'bootstrap-components/Container'
+import { Container } from 'bootstrap-components'
 import logo from '../../res/react-bootstrap.svg'
-
-const $ = window.$
+import { hideNav } from '../tools/utils'
 
 const styles = {
   tab: {
     textTransform: 'capitalize'
   },
-  navbar: {
+  nav: {
     margin: '0'
   },
   logo: {
@@ -25,8 +24,6 @@ const styles = {
     }
   }
 }
-
-const hideNav = () => $('.collapse').collapse('hide')
 
 const Tab = (props, { router }) => {
   const to = `/${props.children.split(' ').join('-')}`
@@ -50,10 +47,11 @@ Tab.contextTypes = {
   router: React.PropTypes.object
 }
 
-const Navbar = () => (
+
+export const Navbar = () => (
   <div
     className="navbar navbar-default"
-    style={styles.navbar}
+    style={styles.nav}
   >
     <Container>
       <div className="navbar-header">
@@ -74,14 +72,14 @@ const Navbar = () => (
           style={styles.logo.container}
           to="/getting-started"
           onClick={hideNav}
-        >
-          <img
-            src={logo}
-            style={styles.logo.image}
-            alt="React Bootstrap Components Logo"
-          />
-        </Link>
-
+          children={
+            <img
+              src={logo}
+              style={styles.logo.image}
+              alt="React Bootstrap Components Logo"
+            />
+          }
+        />
       </div>
 
       <div className="collapse navbar-collapse" id="nav-collapse">
@@ -90,12 +88,11 @@ const Navbar = () => (
         </ul>
 
         <ul className="nav navbar-nav navbar-right">
-          <Tab>icons</Tab>
-          <Tab>dropdowns</Tab>
+          {['icons', 'dropdowns'].map((title, i) =>
+            <Tab key={i}>{title}</Tab>
+          )}
         </ul>
       </div>
     </Container>
   </div>
 )
-
-export default Navbar

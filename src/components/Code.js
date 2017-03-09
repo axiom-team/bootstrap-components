@@ -15,7 +15,7 @@ const styles = {
   }
 }
 
-const Code = ({
+export const Code = ({
   language,
   children
 }) => (
@@ -27,5 +27,3 @@ const Code = ({
     {children}
   </SyntaxHighlighter>
 )
-
-export default Code

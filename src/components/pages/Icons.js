@@ -3,8 +3,7 @@
  */
 
 import React from 'react'
-import Code from '../Code'
-import Arrow from '../Arrow'
+import { Code, Arrow } from '../'
 import { Icon, Button, Alert } from 'bootstrap-components'
 
 const Icons = () => (
@@ -14,17 +13,6 @@ const Icons = () => (
         <div className="col-sm-6">
           <section>
             <Icon>search</Icon>
-          </section>
-
-          <section>
-            Use any
-            {' '}
-            <a
-              href="http://getbootstrap.com/components/#glyphicons"
-              target="_blank"
-            >
-              Bootstrap glyphicon
-            </a>
           </section>
         </div>
 
@@ -36,9 +24,7 @@ const Icons = () => (
       </div>
     </main>
 
-
     <main>
-
       <div className="row">
         <div className="col-sm-6">
           <section>

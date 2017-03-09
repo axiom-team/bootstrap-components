@@ -6,7 +6,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import Root from './components/Root'
-import './index.css'
+import './index.scss'
 
 const render = Component => {
   ReactDOM.render(

@@ -14,7 +14,7 @@ const styles = {
 
 const toPath = str => str.split(' ').join('-')
 
-const Arrow = ({
+export const Arrow = ({
   direction,
   children
 }) => {
@@ -31,15 +31,15 @@ const Arrow = ({
     <Link
       to={toPath(children)}
       className={`pull-${direction}`}
-    >
-      <Button style={styles.arrow}>
-        {icon}
-      </Button>
-    </Link>
+      children={
+        <Button style={styles.arrow}>
+          {icon}
+        </Button>
+      }
+    />
   )
 }
 Arrow.propTypes = {
   direction: React.PropTypes.string.isRequired
 }
 
-export default Arrow

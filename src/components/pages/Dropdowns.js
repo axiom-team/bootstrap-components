@@ -3,25 +3,25 @@
  */
 
 import React from 'react'
-import Arrow from '../Arrow'
+import { Code, Arrow } from '../'
 import Dropdown from 'bootstrap-components/Dropdown'
-import Code from '../Code'
 
 const Dropdowns = () => (
   <div>
     <main>
       <div className="row">
         <div className="col-sm-6">
-          <Dropdown title='Dropdown'>
-            <div>Action</div>
-            <div>Another Action</div>
-            <div>Something else here</div>
-            <hr/>
-            <div>Separated link</div>
-            <div to="/icons">
-              Icons page
-            </div>
-          </Dropdown>
+          <section>
+            <Dropdown title='Dropdown'>
+              <div>Action</div>
+              <div>Another Action</div>
+              <hr/>
+              <div>Separated link</div>
+              <div to="/getting-started">
+                Getting started page
+              </div>
+            </Dropdown>
+          </section>
 
           <section>
             The <code>to</code> prop uses
@@ -40,44 +40,9 @@ const Dropdowns = () => (
             {`<Dropdown title='Dropdown'>
   <div>Action</div>
   <div>Another Action</div>
-  <div>Something else here</div>
   <hr/>
   <div>Separated link</div>
-  <div to="/icons">
-    Icons page
-  </div>
-</Dropdown>`}
-          </Code>
-        </div>
-      </div>
-    </main>
-
-    <main>
-      <div className="row">
-        <div className="col-sm-6">
-          <Dropdown title='Dropup' dropup>
-            <div>Action</div>
-            <div>Another Action</div>
-            <div>Something else here</div>
-            <hr/>
-            <div href="/getting-started">
-              Getting started page
-            </div>
-          </Dropdown>
-
-          <section>
-            The <code>href</code> prop uses an anchor tag
-          </section>
-        </div>
-
-        <div className="col-sm-6">
-          <Code>
-            {`<Dropdown title='Dropup' dropup>
-  <div>Action</div>
-  <div>Another Action</div>
-  <div>Something else here</div>
-  <hr/>
-  <div href="/getting-started">
+  <div to="/getting-started">
     Getting started page
   </div>
 </Dropdown>`}
@@ -87,19 +52,59 @@ const Dropdowns = () => (
     </main>
 
     <main>
+      <h1>Dropup</h1>
       <div className="row">
         <div className="col-sm-6">
-          <Dropdown title="Dropdown">
-            <header>Dropdown header</header>
-            <div>Action</div>
-            <div>Another Action</div>
-            <div>Something else here</div>
-            <header>Dropdown header</header>
-            <div>Separated link</div>
-          </Dropdown>
+          <section>
+            <Dropdown
+              title='Dropup'
+              dropup
+            >
+              <div>Action</div>
+              <div>Another Action</div>
+              <hr/>
+              <div href="/icons">
+                Icons page
+              </div>
+            </Dropdown>
+          </section>
 
           <section>
-            Dropdown headers can be used to label separate groups of links
+            The <code>href</code> prop uses an anchor tag
+          </section>
+        </div>
+
+        <div className="col-sm-6">
+          <Code>
+            {`<Dropdown
+  title='Dropup'
+  dropup
+>
+  <div>Action</div>
+  <div>Another Action</div>
+  <hr/>
+  <div href="/icons">
+    Icons page
+  </div>
+</Dropdown>`}
+          </Code>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <h1>Headers</h1>
+
+      <div className="row">
+        <div className="col-sm-6">
+          <section>
+            <Dropdown title="Dropdown">
+              <header>Dropdown header</header>
+              <div>Action</div>
+              <div>Another Action</div>
+              <header>Dropdown header</header>
+              <div>Separated link</div>
+            </Dropdown>
           </section>
         </div>
 
@@ -107,7 +112,9 @@ const Dropdowns = () => (
           <Code>
             {`<Dropdown>
   ...
-  <header>Dropdown header</header>
+  <header>
+    Dropdown header
+  </header>
   ...
 </Dropdown>`}
           </Code>
@@ -116,18 +123,17 @@ const Dropdowns = () => (
     </main>
 
     <main>
+      <h1>Dividers</h1>
+
       <div className="row">
         <div className="col-sm-6">
-          <Dropdown title="Dropdown">
-            <div>Action</div>
-            <div>Another Action</div>
-            <div>Something else here</div>
-            <hr/>
-            <div>Separated link</div>
-          </Dropdown>
-
           <section>
-            Dividers can help separate different links
+            <Dropdown title="Dropdown">
+              <div>Action</div>
+              <div>Another Action</div>
+              <hr/>
+              <div>Separated link</div>
+            </Dropdown>
           </section>
         </div>
 
@@ -144,18 +150,19 @@ const Dropdowns = () => (
     </main>
 
     <main>
+      <h1>Disabled</h1>
+
       <div className="row">
         <div className="col-sm-6">
-          <Dropdown title="Dropdown">
-            <div>Regular link</div>
-            <div disabled>Disabled link</div>
-            <div>Another link</div>
-          </Dropdown>
-
           <section>
-            Disable menu items to prevent the user from interacting with them
+            <Dropdown title="Dropdown">
+              <div>Regular link</div>
+              <div disabled>Disabled link</div>
+              <div>Another link</div>
+            </Dropdown>
           </section>
         </div>
+
         <div className="col-sm-6">
           <Code>
             {`<Dropdown>

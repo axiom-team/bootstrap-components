@@ -1,5 +1,3 @@
-if (process.env.NODE_ENV === 'production') {
-  require('./index.prod.js')
-} else {
+process.env.NODE_ENV === 'production' ?
+  require('./index.prod.js') :
   require('./index.dev.js')
-}

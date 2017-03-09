@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  background-color: #222;
+}
+
+main {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+
+  h1 {
+    font-family: 'Merriweather', serif;
+  }
+
+  section {
+    margin: 1em 0;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
