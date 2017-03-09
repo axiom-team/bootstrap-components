@@ -1126,9 +1126,9 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bootstrap-components@^1.1.49:
-  version "1.1.49"
-  resolved "https://registry.yarnpkg.com/bootstrap-components/-/bootstrap-components-1.1.49.tgz#28c0401d941ea0e71627ce021905cff8ef802121"
+bootstrap-components@^1.1.60:
+  version "1.1.60"
+  resolved "https://registry.yarnpkg.com/bootstrap-components/-/bootstrap-components-1.1.60.tgz#c2f59b4616a792b9c9963fbeeadd0cfbc30c4974"
   dependencies:
     recursive-readdir "^2.1.1"
     strip-ansi "^3.0.1"

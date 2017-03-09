@@ -1,14 +1,3 @@
-// @remove-on-eject-begin
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- */
-// @remove-on-eject-end
-
 // Do this as the first thing so that any code reading it knows the right env.
 process.env.NODE_ENV = 'production';
 
@@ -25,8 +14,8 @@ var url = require('url');
 var filesize = require('filesize');
 var gzipSize = require('gzip-size').sync;
 var webpack = require('webpack');
-var config = require('./webpack.config.prod');
-var paths = require('./paths');
+var config = require('../config/webpack.config.prod');
+var paths = require('../config/paths');
 var checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
 var recursive = require('recursive-readdir');
 var stripAnsi = require('strip-ansi');
@@ -133,16 +122,7 @@ function printErrors(summary, errors) {
 // Create the production build and print the deployment instructions.
 function build(previousSizeMap) {
   console.log('Creating an optimized production build...');
-
-  var compiler;
-  try {
-    compiler = webpack(config);
-  } catch (err) {
-    printErrors('Failed to compile.', [err]);
-    process.exit(1);
-  }
-
-  compiler.run((err, stats) => {
+  webpack(config).run((err, stats) => {
     if (err) {
       printErrors('Failed to compile.', [err]);
       process.exit(1);

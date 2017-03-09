@@ -1,14 +1,3 @@
-// @remove-on-eject-begin
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- */
-// @remove-on-eject-end
-
 process.env.NODE_ENV = 'development';
 
 // Load environment variables from .env file. Suppress warnings using silent
@@ -30,7 +19,7 @@ var getProcessForPort = require('react-dev-utils/getProcessForPort');
 var openBrowser = require('react-dev-utils/openBrowser');
 var prompt = require('react-dev-utils/prompt');
 var fs = require('fs');
-var config = require('webpack.dev.js');
+var config = require('../config/webpack.config.dev');
 var paths = require('../config/paths');
 
 var useYarn = fs.existsSync(paths.yarnLockFile);
@@ -63,15 +52,7 @@ if (isSmokeTest) {
 function setupCompiler(host, port, protocol) {
   // "Compiler" is a low-level interface to Webpack.
   // It lets us listen to some events and provide our own custom messages.
-  try {
-    compiler = webpack(config, handleCompile);
-  } catch (err) {
-    console.log(chalk.red('Failed to compile.'));
-    console.log();
-    console.log(err.message || err);
-    console.log();
-    process.exit(1);
-  }
+  compiler = webpack(config, handleCompile);
 
   // "invalid" event fires when you have changed a file, and Webpack is
   // recompiling a bundle. WebpackDevServer takes care to pause serving the
@@ -257,8 +238,6 @@ function runDevServer(host, port, protocol) {
     // for some reason broken when imported through Webpack. If you just want to
     // use an image, put it in `src` and `import` it from JavaScript instead.
     contentBase: paths.appPublic,
-    // By default files from `contentBase` will not trigger a page reload.
-    watchContentBase: true,
     // Enable hot reloading server. It will provide /sockjs-node/ endpoint
     // for the WebpackDevServer client so it can learn when the files were
     // updated. The WebpackDevServer client is included as an entry point
@@ -278,8 +257,7 @@ function runDevServer(host, port, protocol) {
     },
     // Enable HTTPS if the HTTPS environment variable is set to 'true'
     https: protocol === "https",
-    host: host,
-    overlay: false,
+    host: host
   });
 
   // Our custom middleware proxies requests to /index.html or a remote API.

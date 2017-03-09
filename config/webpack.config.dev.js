@@ -1,37 +1,22 @@
-// @remove-on-eject-begin
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- */
-// @remove-on-eject-end
-
-var autoprefixer = require('autoprefixer');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
-var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
-var WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
-var getClientEnvironment = require('./env');
-var paths = require('./paths');
-
-// @remove-on-eject-begin
-// `path` is not used after eject - see https://github.com/facebookincubator/create-react-app/issues/1174
-var path = require('path');
-// @remove-on-eject-end
+const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
+const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
+const getClientEnvironment = require('./env');
+const paths = require('./paths');
+const path = require('path')
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
-var publicPath = '/';
+const publicPath = '/';
 // `publicUrl` is just like `publicPath`, but we will provide it to our app
 // as %PUBLIC_URL% in `index.html` and `process.env.PUBLIC_URL` in JavaScript.
 // Omit trailing slash as %PUBLIC_PATH%/xyz looks better than %PUBLIC_PATH%xyz.
-var publicUrl = '';
+const publicUrl = '';
 // Get environment variables to inject into our app.
-var env = getClientEnvironment(publicUrl);
+const env = getClientEnvironment(publicUrl);
 
 // This is the development configuration.
 // It is focused on developer experience and fast rebuilds.
@@ -102,17 +87,6 @@ module.exports = {
       'react-native': 'react-native-web'
     }
   },
-  // @remove-on-eject-begin
-  // Resolve loaders (webpack plugins for CSS, images, transpilation) from the
-  // directory of `react-scripts` itself rather than the project directory.
-  resolveLoader: {
-    modules: [
-      paths.ownNodeModules,
-      // Lerna hoists everything, so we need to look in our app directory
-      paths.appNodeModules
-    ]
-  },
-  // @remove-on-eject-end
   module: {
     rules: [
       // Disable require.ensure as it's not a standard language feature.
@@ -257,4 +231,4 @@ module.exports = {
   performance: {
     hints: false
   }
-};
+}
