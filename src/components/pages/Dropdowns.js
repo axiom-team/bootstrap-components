@@ -17,7 +17,9 @@ const Dropdowns = () => (
               <div>Another Action</div>
               <hr/>
               <div>Separated link</div>
-              <div to="/getting-started">
+              <div
+                to="/getting-started"
+              >
                 Getting started page
               </div>
             </Dropdown>
@@ -42,7 +44,9 @@ const Dropdowns = () => (
   <div>Another Action</div>
   <hr/>
   <div>Separated link</div>
-  <div to="/getting-started">
+  <div
+    to="/getting-started"
+  >
     Getting started page
   </div>
 </Dropdown>`}
@@ -63,7 +67,9 @@ const Dropdowns = () => (
               <div>Action</div>
               <div>Another Action</div>
               <hr/>
-              <div href="/icons">
+              <div
+                href="/icons"
+              >
                 Icons page
               </div>
             </Dropdown>
@@ -83,7 +89,9 @@ const Dropdowns = () => (
   <div>Action</div>
   <div>Another Action</div>
   <hr/>
-  <div href="/icons">
+  <div
+    href="/icons"
+  >
     Icons page
   </div>
 </Dropdown>`}

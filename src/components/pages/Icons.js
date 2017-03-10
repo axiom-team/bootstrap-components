@@ -29,19 +29,27 @@ const Icons = () => (
         <div className="col-sm-6">
           <section>
             <Button>
-              <Icon>align-left</Icon>
+              <Icon>
+                align-left
+              </Icon>
             </Button>
 
             <Button>
-              <Icon>align-center</Icon>
+              <Icon>
+                align-center
+              </Icon>
             </Button>
 
             <Button>
-              <Icon>align-right</Icon>
+              <Icon>
+                align-right
+              </Icon>
             </Button>
 
             <Button>
-              <Icon>align-justify</Icon>
+              <Icon>
+                align-justify
+              </Icon>
             </Button>
           </section>
         </div>
@@ -49,7 +57,9 @@ const Icons = () => (
         <div className="col-sm-6">
           <Code>
             {`<Button>
-  <Icon>left-align</Icon>
+  <Icon>
+    align-left
+  </Icon>
 </Button>`}
           </Code>
         </div>
@@ -93,7 +103,9 @@ const Icons = () => (
         <div className="col-sm-6">
           <section>
             <Alert type="danger">
-              <Icon>exclamation-sign</Icon>
+              <Icon>
+                exclamation-sign
+              </Icon>
               {' '}
               Enter a valid email address
             </Alert>
@@ -103,7 +115,9 @@ const Icons = () => (
         <div className="col-sm-6">
           <Code>
             {`<Alert type="danger">
-  <Icon>exclamation-sign</Icon>
+  <Icon>
+    exclamation-sign
+  </Icon>
   {' '}
   Enter a valid email address
 </Alert>`}

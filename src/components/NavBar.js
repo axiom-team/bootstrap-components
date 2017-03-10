@@ -7,13 +7,16 @@ import { Link } from 'react-router'
 import { Container } from 'bootstrap-components'
 import logo from '../../res/react-bootstrap.svg'
 import { hideNav } from '../tools/utils'
+import { NavTab } from './'
 
 const styles = {
-  tab: {
-    textTransform: 'capitalize'
-  },
-  nav: {
-    margin: '0'
+  navBar: {
+    margin: '0',
+    position: 'fixed',
+    left: 0,
+    top: 0,
+    right: 0,
+    zIndex: 10
   },
   logo: {
     container: {
@@ -25,33 +28,10 @@ const styles = {
   }
 }
 
-const Tab = (props, { router }) => {
-  const to = `/${props.children.split(' ').join('-')}`
-  const isActive = router.isActive(to, props.params)
-  const className = isActive ? 'active' : ''
-  const link = (
-    <Link to={to} {...props}/>
-  )
-
-  return (
-    <li
-      style={styles.tab}
-      className={className}
-      onClick={hideNav}
-    >
-      {link}
-    </li>
-  )
-}
-Tab.contextTypes = {
-  router: React.PropTypes.object
-}
-
-
 export const Navbar = () => (
   <div
     className="navbar navbar-default"
-    style={styles.nav}
+    style={styles.navBar}
   >
     <Container>
       <div className="navbar-header">
@@ -84,12 +64,12 @@ export const Navbar = () => (
 
       <div className="collapse navbar-collapse" id="nav-collapse">
         <ul className="nav navbar-nav">
-          <Tab>getting started</Tab>
+          <NavTab>getting started</NavTab>
         </ul>
 
         <ul className="nav navbar-nav navbar-right">
           {['icons', 'dropdowns'].map((title, i) =>
-            <Tab key={i}>{title}</Tab>
+            <NavTab key={i}>{title}</NavTab>
           )}
         </ul>
       </div>

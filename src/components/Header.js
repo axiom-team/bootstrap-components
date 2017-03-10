@@ -8,14 +8,13 @@ import reactLogo from '../../res/react.svg'
 import bootstrapLogo from '../../res/bootstrap.svg'
 import plusIcon from '../../res/plus.svg'
 
-
 const styles = {
   container: {
     backgroundColor: '#222',
     color: '#eee',
     textAlign: 'center',
     textTransform: 'capitalize',
-    margin: '2.5em',
+    margin: '6em 2.5em 2.5em',
     fontFamily: '"Merriweather", serif',
   },
   logo: {
