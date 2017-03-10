@@ -142,7 +142,11 @@ module.exports = {
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,
-        include: paths.appSrc,
+        include: [
+          paths.appSrc,
+          require.resolve('get-own-enumerable-property-symbols'),
+          require.resolve('stringify-object')
+        ],
         loader: 'babel-loader'
       },
       // The notation here is somewhat confusing.
@@ -239,9 +243,7 @@ module.exports = {
         screw_ie8: true, // React doesn't support IE8
         warnings: false
       },
-      mangle: {
-        screw_ie8: true
-      },
+      mangle: false,
       output: {
         screw_ie8: true
       },
