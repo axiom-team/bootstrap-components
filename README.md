@@ -1,5 +1,6 @@
-# Bootstrap components
-### [getreactbootstrap.com](https://getreactbootstrap.com/) [![npm version](https://badge.fury.io/js/bootstrap-components.svg)](https://badge.fury.io/js/bootstrap-components)
+# React Bootstrap Components
+## [getreactbootstrap.com](https://getreactbootstrap.com/)
+[![npm version](https://badge.fury.io/js/bootstrap-components.svg)](https://badge.fury.io/js/bootstrap-components)
 ## Reactified Bootstrap components
 
 [Demo app and documentation](https://getreactbootstrap.com/)
