@@ -5,6 +5,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { Button, Icon } from 'bootstrap-components'
+import { titleToPath } from '../tools/utils'
 
 const styles = {
   arrow: {
@@ -12,12 +13,7 @@ const styles = {
   }
 }
 
-const toPath = str => str.split(' ').join('-')
-
-export const Arrow = ({
-  direction,
-  children
-}) => {
+export const Arrow = ({ direction, children }) => {
 
   const icon = direction === 'left' ?
     <div>
@@ -29,7 +25,7 @@ export const Arrow = ({
 
   return (
     <Link
-      to={toPath(children)}
+      to={titleToPath(children)}
       className={`pull-${direction}`}
       children={
         <Button style={styles.arrow}>
