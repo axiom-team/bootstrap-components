@@ -4,7 +4,7 @@
 
 import React from 'react'
 import { Link } from 'react-router'
-import { hideNav } from '../tools/utils'
+import { hideNav } from '../utils'
 
 const styles = {
   tab: {

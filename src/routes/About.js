@@ -4,8 +4,10 @@
 
 import React from 'react'
 
-export const About = () => (
+const About = () => (
   <div>
     hello
   </div>
 )
+
+export default About

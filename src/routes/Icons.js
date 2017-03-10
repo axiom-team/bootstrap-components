@@ -3,7 +3,7 @@
  */
 
 import React from 'react'
-import { Code, Arrow } from '../'
+import { Code, Arrow } from '../components'
 import { Icon, Button, Alert } from 'bootstrap-components'
 
 const Icons = () => (

@@ -5,7 +5,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { Button, Icon } from 'bootstrap-components'
-import { titleToPath } from '../tools/utils'
+import { titleToPath } from '../utils'
 
 const styles = {
   arrow: {

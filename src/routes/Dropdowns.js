@@ -3,7 +3,7 @@
  */
 
 import React from 'react'
-import { Code, Arrow } from '../'
+import { Code, Arrow } from '../components'
 import Dropdown from 'bootstrap-components/Dropdown'
 
 const Dropdowns = () => (

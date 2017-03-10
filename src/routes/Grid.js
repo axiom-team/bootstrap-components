@@ -3,11 +3,13 @@
  */
 
 import React from 'react'
-import Arrow from '../Arrow'
+import { Arrow } from '../components'
 
 const Grid = () => (
   <div>
-    hello
+
+    Grid goes here
+
     <Arrow direction="left">icons</Arrow>
     <Arrow direction="right">dropdowns</Arrow>
   </div>

@@ -6,7 +6,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import { Container } from 'bootstrap-components'
 import logo from '../../res/react-bootstrap.svg'
-import { hideNav } from '../tools/utils'
+import { hideNav } from '../utils'
 import { NavTab } from './'
 
 const styles = {

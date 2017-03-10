@@ -3,10 +3,10 @@
  */
 
 import React from 'react'
-import { pathToTitle } from '../tools/utils'
 import reactLogo from '../../res/react.svg'
 import bootstrapLogo from '../../res/bootstrap.svg'
 import plusIcon from '../../res/plus.svg'
+import { pathToTitle } from '../utils'
 
 const styles = {
   container: {

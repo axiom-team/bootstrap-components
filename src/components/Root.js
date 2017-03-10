@@ -5,7 +5,7 @@
 import React from 'react'
 import ReactGA from 'react-ga'
 import { Router, browserHistory } from 'react-router'
-import routes from '../tools/routes'
+import routes from '../routes'
 
 ReactGA.initialize('UA-91838823-1')
 

@@ -10,7 +10,7 @@ const styles = {
   }
 }
 
-const App = ({ children }) => (
+export const App = ({ children }) => (
   <div>
     <Navbar/>
     <Header/>
@@ -22,5 +22,3 @@ const App = ({ children }) => (
     <Footer/>
   </div>
 )
-
-export default App
