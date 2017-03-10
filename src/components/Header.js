@@ -25,6 +25,9 @@ const styles = {
     fontSize: '3em',
     fontFamily: '"Passion One", cursive'
   },
+  subtitle: {
+    marginTop: '.5em'
+  },
   plus: {
     height: '2em',
     margin: '1em 1em 2em'
@@ -61,7 +64,9 @@ export const Header = (props, { router }) => {
         alt="Bootstrap logo"
       />
 
-      <h3>{sectionTitle}</h3>
+      <h3 style={styles.subtitle}>
+        {sectionTitle}
+      </h3>
     </div>
   )
 }
