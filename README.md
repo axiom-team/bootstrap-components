@@ -1,5 +1,6 @@
-# Bootstrap components [getreactbootstrap.com](https://getreactbootstrap.com/) 
-## Reactified Bootstrap components [![npm version](https://badge.fury.io/js/bootstrap-components.svg)](https://badge.fury.io/js/bootstrap-components)
+# Bootstrap components
+### [getreactbootstrap.com](https://getreactbootstrap.com/) [![npm version](https://badge.fury.io/js/bootstrap-components.svg)](https://badge.fury.io/js/bootstrap-components)
+## Reactified Bootstrap components
 
 [Demo app and documentation](https://getreactbootstrap.com/)
 
@@ -15,7 +16,7 @@ npm install --save bootstrap-components
 yarn add bootstrap-components
 ```
 
-## Start the demo app
+## Start the Demo Application
 ```
 git clone https://github.com/timurtu/bootstrap-components
 cd bootstrap-components

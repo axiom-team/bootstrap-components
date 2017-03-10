@@ -1140,7 +1140,7 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bootstrap-components@^1.1.66:
+bootstrap-components@^1.1.67:
   version "1.1.67"
   resolved "https://registry.yarnpkg.com/bootstrap-components/-/bootstrap-components-1.1.67.tgz#5d09bb57a951502080d3bb1333f8a99b49c78fb2"
   dependencies:
@@ -5608,6 +5608,12 @@ right-align@^0.1.1:
 rimraf@2, rimraf@^2.2.8, rimraf@^2.4.3, rimraf@^2.4.4, rimraf@~2.5.1, rimraf@~2.5.4:
   version "2.5.4"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.5.4.tgz#96800093cbf1a0c86bd95b4625467535c29dfa04"
+  dependencies:
+    glob "^7.0.5"
+
+rimraf@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
   dependencies:
     glob "^7.0.5"
 
