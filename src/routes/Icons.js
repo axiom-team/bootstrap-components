@@ -3,128 +3,95 @@
  */
 
 import React from 'react'
-import { Code, Arrow } from '../components'
+import { Snippet, Arrow } from '../components'
 import { Icon, Button, Alert } from 'bootstrap-components'
+import { space } from '../utils'
 
 const Icons = () => (
   <div>
-    <main>
-      <div className="row">
-        <div className="col-sm-6">
-          <section>
-            <Icon>search</Icon>
-          </section>
-        </div>
+    <Snippet>
+      <Icon>search</Icon>
+    </Snippet>
 
-        <div className="col-sm-6">
-          <Code>
-            {'<Icon>search</Icon>'}
-          </Code>
-        </div>
-      </div>
-    </main>
+    <Snippet
+      overrideCode={(
+        <Button>
+          <Icon>
+            align-left
+          </Icon>
+        </Button>
+      )}
+    >
+      <Button>
+        <Icon>
+          align-left
+        </Icon>
+      </Button>
 
-    <main>
-      <div className="row">
-        <div className="col-sm-6">
-          <section>
-            <Button>
-              <Icon>
-                align-left
-              </Icon>
-            </Button>
+      <Button>
+        <Icon>
+          align-center
+        </Icon>
+      </Button>
 
-            <Button>
-              <Icon>
-                align-center
-              </Icon>
-            </Button>
+      <Button>
+        <Icon>
+          align-right
+        </Icon>
+      </Button>
 
-            <Button>
-              <Icon>
-                align-right
-              </Icon>
-            </Button>
+      <Button>
+        <Icon>
+          align-justify
+        </Icon>
+      </Button>
+    </Snippet>
 
-            <Button>
-              <Icon>
-                align-justify
-              </Icon>
-            </Button>
-          </section>
-        </div>
+    <Snippet
+      overrideCode={(
+        <Button size="lg">
+          <Icon>star</Icon>
+          {space()}
+          Star
+        </Button>
+      )}
+    >
+      <Button size="lg">
+        <Icon>star</Icon> Star
+      </Button>
 
-        <div className="col-sm-6">
-          <Code>
-            {`<Button>
-  <Icon>
-    align-left
-  </Icon>
-</Button>`}
-          </Code>
-        </div>
-      </div>
-    </main>
+      <Button>
+        <Icon>star</Icon> Star
+      </Button>
 
-    <main>
-      <div className="row">
-        <div className="col-sm-6">
-          <section>
-            <Button size="lg">
-              <Icon>star</Icon> Star
-            </Button>
+      <Button size="sm">
+        <Icon>star</Icon> Star
+      </Button>
 
-            <Button>
-              <Icon>star</Icon> Star
-            </Button>
+      <Button size="xs">
+        <Icon>star</Icon> Star
+      </Button>
+    </Snippet>
 
-            <Button size="sm">
-              <Icon>star</Icon> Star
-            </Button>
-
-            <Button size="xs">
-              <Icon>star</Icon> Star
-            </Button>
-          </section>
-        </div>
-
-        <div className="col-sm-6">
-          <Code>
-            {`<Button size="lg">
-  <Icon>star</Icon> Star
-</Button>`}
-          </Code>
-        </div>
-      </div>
-    </main>
-
-    <main>
-      <div className="row">
-        <div className="col-sm-6">
-          <section>
-            <Alert type="danger">
-              <Icon>
-                exclamation-sign
-              </Icon>
-              {' '}
-              Enter a valid email address
-            </Alert>
-          </section>
-        </div>
-
-        <div className="col-sm-6">
-          <Code>
-            {`<Alert type="danger">
-  <Icon>
-    exclamation-sign
-  </Icon>
-  {' '}
-  Enter a valid email address
-</Alert>`}
-          </Code>
-        </div>
-      </div>
-    </main>
+    <Snippet
+      overrideCode={(
+        <Alert type="danger">
+          <Icon>
+            exclamation-sign
+          </Icon>
+          {space()}
+          Enter a valid email address
+        </Alert>
+      )}
+    >
+      <Alert type="danger">
+        <Icon>
+          exclamation-sign
+        </Icon>
+        {' '}
+        Enter a valid email address
+      </Alert>
+    </Snippet>
 
     <Arrow direction='left'>getting started</Arrow>
     <Arrow direction="right">dropdowns</Arrow>

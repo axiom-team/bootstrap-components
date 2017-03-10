@@ -11,7 +11,7 @@ const GettingStarted = () => (
       <h1>Prerequisite</h1>
 
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-md-6">
           <section>
             Load
             {' '}
@@ -21,7 +21,7 @@ const GettingStarted = () => (
           </section>
         </div>
 
-        <div className="col-sm-6">
+        <div className="col-md-6">
           <section>
             Bootstrap's JavaScript require's
             {' '}
@@ -35,11 +35,11 @@ const GettingStarted = () => (
       <h1>Install</h1>
 
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-md-6">
           <section>Install with npm</section>
         </div>
 
-        <div className="col-sm-6">
+        <div className="col-md-6">
           <Code language="bash">
             {'npm install --save bootstrap-components'}
           </Code>
@@ -51,36 +51,31 @@ const GettingStarted = () => (
       <h1>Import</h1>
 
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-md-6">
           <section>
             Either import multiple components in one statement
           </section>
         </div>
 
-        <div className="col-sm-6">
+        <div className="col-md-6">
 
           <Code language="javascript">
-            {`import {
-  Icon,
-  Button,
-  Container
-} from 'bootstrap-components'`}
+            {'import { Icon, Button } from \'bootstrap-components\''}
           </Code>
         </div>
       </div>
 
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-md-6">
           <section>
             Or import components individually
           </section>
         </div>
 
-        <div className="col-sm-6">
+        <div className="col-md-6">
           <Code language="javascript">
             {`import Icon from 'bootstrap-components/Icon'
-import Button from 'bootstrap-components/Button'
-import Container from 'bootstrap-components/Container'`}
+import Button from 'bootstrap-components/Button'`}
           </Code>
         </div>
       </div>
