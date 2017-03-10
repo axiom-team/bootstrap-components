@@ -45,7 +45,7 @@
     "webpack-manifest-plugin": "^1.1.0"
   },
   "dependencies": {
-    "bootstrap-components": "^1.1.66"
+    "bootstrap-components": "^1.1.67"
   },
   "homepage": "https://getreactbootstrap.com",
   "repository": "https://github.com/timurtu/bootstrap-components"
