@@ -10,7 +10,7 @@
     "yinstall": "yarn install"
   },
   "dependencies": {
-    "bootstrap-components": "^1.1.67"
+    "bootstrap-components": "^1.1.69"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.5",
