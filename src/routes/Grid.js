@@ -3,9 +3,9 @@
  */
 
 import React from 'react'
-import { Snippet, Arrow } from '../components'
+import { Snippet } from '../components'
 import Grid from 'bootstrap-components/Grid'
-import './grid.scss'
+import '../styles/grid.scss'
 
 const GridPage = () => (
   <div className="grid-display">
@@ -206,9 +206,6 @@ const GridPage = () => (
         </row>
       </Grid>
     </Snippet>
-
-    <Arrow direction="left">getting started</Arrow>
-    <Arrow direction="right">dropdowns</Arrow>
   </div>
 )
 
