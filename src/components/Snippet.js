@@ -16,20 +16,23 @@ export class Snippet extends React.Component {
     }
   }
 
+  componentDidMount() {
+
+    if(!this.props.splitTheGrid) {
+
+      window.addEventListener('resize', () => {
+        this.checkClearFix()
+      })
+
+      this.checkClearFix()
+    }
+  }
+
   checkClearFix() {
 
     this.setState({
       clearfixMobile: window.innerWidth < 992
     })
-  }
-
-  componentDidMount() {
-
-    window.addEventListener('resize', () => {
-      this.checkClearFix()
-    })
-
-    this.checkClearFix()
   }
 
   render() {
@@ -38,7 +41,8 @@ export class Snippet extends React.Component {
       title,
       subtitle,
       children,
-      overrideCode
+      overrideCode,
+      splitTheGrid
     } = this.props
 
     // Only override the code snippet when it's explicitly defined.
@@ -48,30 +52,45 @@ export class Snippet extends React.Component {
       reactElementToJSXString(children)
 
     const visibleTitle = title ? <h1>{title}</h1> : null
+    const visibleSubtitle = subtitle ? <section>{subtitle}</section> : null
+
+    const visibleGrid = splitTheGrid ? (
+      <div>
+        <section>
+          {children}
+        </section>
+
+        {visibleSubtitle}
+
+        <Code>
+          {code}
+        </Code>
+      </div>
+    ) : (
+      <div className="row">
+        <div className="col-md-6">
+          <section>
+            {children}
+          </section>
+
+          {visibleSubtitle}
+        </div>
+
+        {this.state.clearfixMobile ? <div className="clearfix"/> : null}
+
+        <div className="col-md-6">
+          <Code>
+            {code}
+          </Code>
+        </div>
+      </div>
+    )
+
 
     return (
       <main>
         {visibleTitle}
-
-        <div className="row">
-          <div className="col-md-6">
-            <section>
-              {children}
-            </section>
-
-            <section>
-              {subtitle}
-            </section>
-          </div>
-
-          {this.state.clearfixMobile ? <div className="clearfix"/> : null}
-
-          <div className="col-md-6">
-            <Code>
-              {code}
-            </Code>
-          </div>
-        </div>
+        {visibleGrid}
       </main>
     )
   }

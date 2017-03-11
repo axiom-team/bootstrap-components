@@ -65,6 +65,7 @@ export const Navbar = () => (
       <div className="collapse navbar-collapse" id="nav-collapse">
         <ul className="nav navbar-nav">
           <NavTab>getting started</NavTab>
+          <NavTab>grid</NavTab>
         </ul>
 
         <ul className="nav navbar-nav navbar-right">

@@ -9,6 +9,7 @@ import { space } from '../utils'
 
 const Icons = () => (
   <div>
+
     <Snippet>
       <Icon>search</Icon>
     </Snippet>
