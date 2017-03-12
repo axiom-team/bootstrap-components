@@ -5,7 +5,7 @@
 import React from 'react'
 import { Code, Arrow } from '../components'
 
-const GettingStarted = () => (
+const Start = () => (
   <div>
     <main>
       <h1>Prerequisite</h1>
@@ -85,4 +85,4 @@ import Button from 'bootstrap-components/Button'`}
   </div>
 )
 
-export default GettingStarted
+export default Start

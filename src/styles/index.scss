@@ -16,11 +16,7 @@ main {
   }
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>.active>a {
+  transition: .8s ease all;
 }

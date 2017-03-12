@@ -5,51 +5,64 @@
 import React from 'react'
 import githubLogo from '../../res/github.svg'
 import nodeLogo from '../../res/node.svg'
-
-const styles = {
-  container: {
-    fontSize: '1em',
-    color: '#eee',
-    padding: '1.25em 1em 2.5em',
-    textAlign: 'center',
-    lineHeight: '3'
-  },
-  logo: {
-    height: '3em'
-  }
-}
+import { Grid, Icon } from 'bootstrap-components'
+import '../styles/footer.scss'
 
 export const Footer = () => (
-  <footer
-    className="container"
-    style={styles.container}
-  >
-    <a
-      className="pull-left"
-      href="https://github.com/timurtu/bootstrap-components"
-    >
-      <img
-        src={githubLogo}
-        style={styles.logo}
-        alt="GitHub Logo"
-      />
-    </a>
+  <footer className="container">
+    <Grid>
+      <row>
+        <col
+          xs={6}
+          sm={3}
+          md={2}
 
-    Created by
-    {' '}
-    <a href="https://github.com/timurtu">
-      Timur Uzel
-    </a>.
+          children={(
+            <a href="https://github.com/axiom-team/bootstrap-components">
+              GitHub
+              <img
+                src={githubLogo}
+                alt="GitHub logo"
+              />
+            </a>
+          )}
+        />
 
-    <a
-      className="pull-right"
-      href="https://npmjs.com/packages/bootstrap-components"
-    >
-      <img
-        src={nodeLogo}
-        style={styles.logo}
-        alt="NodeJS Logo"
-      />
-    </a>
+        <col
+          xs={6}
+          sm={3}
+          md={2}
+
+          children={(
+            <a href="https://npmjs.com/package/bootstrap-components">
+              npm
+              <img
+                src={nodeLogo}
+                alt="Node logo"
+              />
+            </a>
+          )}
+        />
+
+        <col
+          xs={12}
+
+          sm={4}
+          smOffset={2}
+
+          md={2}
+          mdOffset={6}
+
+          children={(
+            <a
+              className="main-title"
+              href="https://github.com/timurtu"
+            >
+              With <Icon>heart-empty</Icon> by Timur.
+            </a>
+          )}
+        />
+      </row>
+    </Grid>
   </footer>
 )

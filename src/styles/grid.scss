@@ -1,8 +1,12 @@
 
 .grid-display {
-  .row div {
-    padding: .75em;
-    border: 1px solid #000;
-    text-align: center;
+  .row {
+    margin-bottom: .75em;
+
+    div {
+      padding: .75em;
+      border: 1px solid #000;
+      text-align: center;
+    }
   }
 }

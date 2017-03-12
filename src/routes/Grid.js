@@ -3,7 +3,7 @@
  */
 
 import React from 'react'
-import { Snippet } from '../components'
+import { Snippet, Arrow } from '../components'
 import Grid from 'bootstrap-components/Grid'
 import '../styles/grid.scss'
 
@@ -157,7 +157,7 @@ const GridPage = () => (
           <col xs={4}>
             .col-xs-4
             <br/>
-            Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.
+            Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one unit.
           </col>
 
           <col xs={6}>
@@ -206,6 +206,50 @@ const GridPage = () => (
         </row>
       </Grid>
     </Snippet>
+
+    <Snippet
+      title="Offsetting columns"
+      splitTheGrid
+    >
+      <Grid>
+        <row>
+          <col
+            md={4}
+            children="col-md-4"
+          />
+
+          <col
+            md={4}
+            mdOffset={4}
+            children="col-md-4 col-md-offset-4"
+          />
+        </row>
+
+        <row>
+          <col
+            md={3}
+            mdOffset={3}
+            children="col-md-3 col-md-offset-3"
+          />
+
+          <col
+            md={3}
+            mdOffset={3}
+            children="col-md-3 col-md-offset-3"
+          />
+        </row>
+
+        <row>
+          <col
+            md={6}
+            mdOffset={3}
+            children="col-md-6 col-md-offset-3"
+          />
+        </row>
+      </Grid>
+    </Snippet>
+
+    <Arrow direction='left'>dropdowns</Arrow>
   </div>
 )
 

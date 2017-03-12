@@ -50,7 +50,7 @@ export const Navbar = () => (
         <Link
           className="navbar-brand"
           style={styles.logo.container}
-          to="/getting-started"
+          to="/start"
           onClick={hideNav}
           children={
             <img
@@ -64,12 +64,11 @@ export const Navbar = () => (
 
       <div className="collapse navbar-collapse" id="nav-collapse">
         <ul className="nav navbar-nav">
-          <NavTab>getting started</NavTab>
-          <NavTab>grid</NavTab>
+          <NavTab>start</NavTab>
         </ul>
 
         <ul className="nav navbar-nav navbar-right">
-          {['icons', 'dropdowns'].map((title, i) =>
+          {['icons', 'dropdowns', 'grid'].map((title, i) =>
             <NavTab key={i}>{title}</NavTab>
           )}
         </ul>
