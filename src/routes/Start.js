@@ -15,7 +15,7 @@ const Start = () => (
           <section>
             Load
             {' '}
-            <a href="http://getbootstrap.com/getting-started/" target="_blank">Bootstrap</a>
+            <a href="http://getbootstrap.com/getting-started/">Bootstrap</a>
             {' '}
             in your <code>index.html</code>
           </section>
@@ -25,7 +25,7 @@ const Start = () => (
           <section>
             Bootstrap's JavaScript require's
             {' '}
-            <a href="https://developers.google.com/speed/libraries/#jquery" target="_blank">JQuery</a>
+            <a href="https://developers.google.com/speed/libraries/#jquery">JQuery</a>
           </section>
         </div>
       </div>

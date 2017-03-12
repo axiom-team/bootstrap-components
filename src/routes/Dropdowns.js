@@ -13,10 +13,7 @@ const Dropdowns = () => (
         <div>
           The <code>to</code> prop uses
           {' '}
-          <a
-            target="_blank"
-            href="https://github.com/ReactTraining/react-router"
-          >
+          <a href="https://github.com/ReactTraining/react-router">
             React Router
           </a>'s <code>Link</code> component
         </div>
