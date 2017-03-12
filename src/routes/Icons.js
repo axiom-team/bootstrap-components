@@ -94,7 +94,7 @@ const Icons = () => (
       </Alert>
     </Snippet>
 
-    <Arrow direction='left'>getting started</Arrow>
+    <Arrow direction='left'>start</Arrow>
     <Arrow direction="right">dropdowns</Arrow>
   </div>
 )

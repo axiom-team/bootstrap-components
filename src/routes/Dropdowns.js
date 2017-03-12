@@ -28,8 +28,8 @@ const Dropdowns = () => (
         <div>Something else here</div>
         <hr/>
         <div>Separated link</div>
-        <div to="/getting-started">
-          Getting started page
+        <div to="/start">
+          Start page
         </div>
       </Dropdown>
     </Snippet>

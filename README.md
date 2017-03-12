@@ -30,3 +30,6 @@ yarn install
 
 ### Production mode
 - `yarn prod`
+
+### Run tests
+- `yarn test`

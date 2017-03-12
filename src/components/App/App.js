@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from 'bootstrap-components/Container'
-import { Navbar, Header, Footer } from './'
+import { Navbar, Header, Footer } from '../'
 
 const styles = {
   container: {

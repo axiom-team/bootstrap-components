@@ -1,3 +1,5 @@
+process.env.NODE_ENV = 'production'
+
 const autoprefixer = require('autoprefixer')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
