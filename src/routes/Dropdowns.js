@@ -15,7 +15,7 @@ const Dropdowns = () => (
           {' '}
           <a href="https://github.com/ReactTraining/react-router">
             React Router
-          </a>'s <code>Link</code> component
+          </a>{'\''}s <code>Link</code> component
         </div>
       }
     >
