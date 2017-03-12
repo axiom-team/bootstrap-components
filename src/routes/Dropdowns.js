@@ -52,7 +52,6 @@ const Dropdowns = () => (
       </Dropdown>
     </Snippet>
 
-
     <Snippet
       title="Alignment"
 

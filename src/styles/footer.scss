@@ -7,12 +7,12 @@ footer.container {
   font-size: 1em;
 
   img, a {
-    transition: .2s ease all;
+    transition: .3s ease all;
   }
 
   img {
     height: 2em;
-    margin: 0 2.25em 0 .75em;
+    margin: 0 2.25em .33em .75em;
     padding: .125em;
 
     &:hover {
@@ -21,10 +21,12 @@ footer.container {
   }
 
   a {
-    color: #cde;
+    color: #ccddee;
 
     &:hover {
       color: #fff;
+      text-decoration: none;
+      text-shadow: 2px 2px 12px rgba(255, 255, 255, .25)
     }
   }
 

@@ -11,6 +11,12 @@ import emailLogo from '../../res/email.svg'
 import { Grid, Icon } from 'bootstrap-components'
 import '../styles/footer.scss'
 
+const styles = {
+  noUnderlines: {
+    textDecoration: 'none'
+  }
+}
+
 export const Footer = () => (
   <footer className="container">
     <Grid>
@@ -57,6 +63,8 @@ export const Footer = () => (
 
           md={2}
           mdOffset={6}
+
+          style={styles.noUnderlines}
 
           children={(
             <a
