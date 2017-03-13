@@ -4,7 +4,7 @@
 
 import React from 'react'
 import githubLogo from '../../res/github.svg'
-import nodeLogo from '../../res/node.svg'
+import npmLogo from '../../res/npm.svg'
 import twitterLogo from '../../res/twitter.svg'
 import facebookLogo from '../../res/facebook.svg'
 import emailLogo from '../../res/email.svg'
@@ -36,7 +36,7 @@ export const Footer = () => (
 
           <a href="https://npmjs.com/package/bootstrap-components">
             npm
-            <img src={nodeLogo} alt="Node logo"/>
+            <img src={npmLogo} alt="Node logo"/>
           </a>
 
           <a href="https://twitter.com/timurtu">

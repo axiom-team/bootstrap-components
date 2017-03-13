@@ -65,10 +65,11 @@ export const Navbar = () => (
       <div className="collapse navbar-collapse" id="nav-collapse">
         <ul className="nav navbar-nav">
           <NavTab>start</NavTab>
+          <NavTab>grid</NavTab>
         </ul>
 
         <ul className="nav navbar-nav navbar-right">
-          {['icons', 'dropdowns', 'grid'].map((title, i) =>
+          {['icons', 'dropdowns'].map((title, i) =>
             <NavTab key={i}>{title}</NavTab>
           )}
         </ul>

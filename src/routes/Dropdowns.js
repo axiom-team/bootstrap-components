@@ -123,7 +123,6 @@ const Dropdowns = () => (
     </Snippet>
 
     <Arrow direction='left'>icons</Arrow>
-    <Arrow direction='right'>grid</Arrow>
   </div>
 )
 

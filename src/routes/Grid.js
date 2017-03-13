@@ -3,7 +3,7 @@
  */
 
 import React from 'react'
-import { Snippet, Arrow } from '../components'
+import { Snippet } from '../components'
 import Grid from 'bootstrap-components/Grid'
 import '../styles/grid.scss'
 
@@ -248,8 +248,6 @@ const GridPage = () => (
         </row>
       </Grid>
     </Snippet>
-
-    <Arrow direction='left'>dropdowns</Arrow>
   </div>
 )
 

@@ -8,15 +8,19 @@ footer.container {
 
   img, a {
     transition: .3s ease all;
+    opacity: .75;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   img {
     height: 2em;
-    margin: 0 2.25em .33em .75em;
-    padding: .125em;
+    margin: 0 2.25em 0 .75em;
 
     &:hover {
-      transform: scale(1.5);
+      transform: scale(1.25);
     }
   }
 
