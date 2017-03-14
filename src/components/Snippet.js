@@ -11,25 +11,27 @@ export class Snippet extends React.Component {
   constructor(props) {
     super(props)
 
+    this.checkClearFix = this.checkClearFix.bind(this)
+
     this.state = {
       clearfixMobile: false
     }
   }
 
   componentDidMount() {
-
-    if(!this.props.splitTheGrid) {
-
-      window.addEventListener('resize', () => {
-        this.checkClearFix()
-      })
-
+    if (!this.props.splitTheGrid) {
+      window.addEventListener('resize', this.checkClearFix)
       this.checkClearFix()
     }
   }
 
-  checkClearFix() {
+  componentWillUnmount() {
+    if (!this.props.splitTheGrid) {
+      window.removeEventListener('resize', this.checkClearFix)
+    }
+  }
 
+  checkClearFix() {
     this.setState({
       clearfixMobile: window.innerWidth < 992
     })

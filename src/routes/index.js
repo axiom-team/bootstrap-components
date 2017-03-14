@@ -9,6 +9,7 @@ import Start from './Start'
 import Icons from './Icons'
 import Dropdowns from './Dropdowns'
 import Grid from './Grid'
+import ButtonGroups from './ButtonGroups'
 
 const routes = (
   <Route path="/" component={App}>
@@ -17,6 +18,7 @@ const routes = (
     <Route path="icons" component={Icons}/>
     <Route path="grid" component={Grid}/>
     <Route path="dropdowns" component={Dropdowns}/>
+    <Route path="button-groups" component={ButtonGroups}/>
   </Route>
 )
 

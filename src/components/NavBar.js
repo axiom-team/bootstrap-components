@@ -69,7 +69,7 @@ export const Navbar = () => (
         </ul>
 
         <ul className="nav navbar-nav navbar-right">
-          {['icons', 'dropdowns'].map((title, i) =>
+          {['icons', 'dropdowns', 'button groups'].map((title, i) =>
             <NavTab key={i}>{title}</NavTab>
           )}
         </ul>

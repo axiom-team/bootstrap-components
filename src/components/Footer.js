@@ -23,11 +23,9 @@ export const Footer = () => (
       <row>
         <col
           xs={12}
-          sm={6}
-          md={4}
+          md={7}
         >
           <a href="https://github.com/axiom-team/bootstrap-components">
-            GitHub
             <img
               src={githubLogo}
               alt="GitHub logo"
@@ -35,22 +33,18 @@ export const Footer = () => (
           </a>
 
           <a href="https://npmjs.com/package/bootstrap-components">
-            npm
             <img src={npmLogo} alt="Node logo"/>
           </a>
 
           <a href="https://twitter.com/timurtu">
-            Twitter
             <img src={twitterLogo} alt="Twitter logo"/>
           </a>
 
           <a href="https://www.facebook.com/reactbootstrap/">
-            Facebook
             <img src={facebookLogo} alt="Facebook logo"/>
           </a>
 
           <a href="mailto:timurt.uzel@gmail.com">
-            Email
             <img src={emailLogo} alt="Email me at timurt.uzel@gmail.com"/>
           </a>
         </col>
@@ -58,11 +52,7 @@ export const Footer = () => (
         <col
           xs={12}
 
-          sm={4}
-          smOffset={2}
-
-          md={2}
-          mdOffset={6}
+          md={5}
 
           style={styles.noUnderlines}
 
