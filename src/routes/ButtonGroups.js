@@ -146,6 +146,35 @@ const ButtonGroups = () => (
         </ButtonGroup>
       </ButtonGroup>
     </Snippet>
+
+    <Snippet
+      title="Justified"
+      overrideCode={(
+        <ButtonGroup justified>
+          {'...'}
+        </ButtonGroup>
+      )}
+    >
+      <ButtonGroup justified>
+        <button>Left</button>
+        <button>Middle</button>
+        <button>Right</button>
+      </ButtonGroup>
+
+      <hr />
+
+      <ButtonGroup justified>
+        <button>Left</button>
+        <button>Middle</button>
+        <ButtonGroup dropdown title="Dropdown">
+          <div>Action</div>
+          <div>Another action</div>
+          <div>Something else here</div>
+          <hr />
+          <div>Separated link</div>
+        </ButtonGroup>
+      </ButtonGroup>
+    </Snippet>
   </div>
 )
 
