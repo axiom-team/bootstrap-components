@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from 'bootstrap-components/Container'
-import { Navbar, Header, Footer } from '../'
+import { Navbar, Header, Footer } from './'
 
 const styles = {
   container: {
@@ -12,13 +12,13 @@ const styles = {
 
 export const App = ({ children }) => (
   <div>
-    <Navbar/>
-    <Header/>
+    <Navbar />
+    <Header />
 
     <Container style={styles.container}>
       {children}
     </Container>
 
-    <Footer/>
+    <Footer />
   </div>
 )

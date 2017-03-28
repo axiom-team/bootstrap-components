@@ -13,12 +13,12 @@ import ButtonGroups from './ButtonGroups'
 
 const routes = (
   <Route path="/" component={App}>
-    <IndexRedirect to="/start"/>
-    <Route path="start" component={Start}/>
-    <Route path="icons" component={Icons}/>
-    <Route path="grid" component={Grid}/>
-    <Route path="dropdowns" component={Dropdowns}/>
-    <Route path="button-groups" component={ButtonGroups}/>
+    <IndexRedirect to="/start" />
+    <Route path="start" component={Start} />
+    <Route path="icons" component={Icons} />
+    <Route path="grid" component={Grid} />
+    <Route path="dropdowns" component={Dropdowns} />
+    <Route path="button-groups" component={ButtonGroups} />
   </Route>
 )
 

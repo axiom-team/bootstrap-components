@@ -4,7 +4,7 @@
 
 import React from 'react'
 import { Snippet } from '../components'
-import { ButtonGroup, ButtonToolbar } from 'bootstrap-components'
+import ButtonGroup from 'bootstrap-components/ButtonGroup'
 
 const ButtonGroups = () => (
   <div>
@@ -19,14 +19,14 @@ const ButtonGroups = () => (
     <Snippet
       title="Button toolbar"
       overrideCode={
-        <ButtonToolbar>
+        <ButtonGroup toolbar>
           <ButtonGroup>{'...'}</ButtonGroup>
           <ButtonGroup>{'...'}</ButtonGroup>
           <ButtonGroup>{'...'}</ButtonGroup>
-        </ButtonToolbar>
+        </ButtonGroup>
       }
     >
-      <ButtonToolbar>
+      <ButtonGroup toolbar>
         <ButtonGroup>
           <button>1</button>
           <button>2</button>
@@ -43,7 +43,7 @@ const ButtonGroups = () => (
         <ButtonGroup>
           <button>8</button>
         </ButtonGroup>
-      </ButtonToolbar>
+      </ButtonGroup>
     </Snippet>
 
     <Snippet
