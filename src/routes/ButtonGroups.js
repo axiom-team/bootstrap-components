@@ -3,6 +3,7 @@
  */
 
 import React from 'react'
+import {Link} from 'react-router'
 import { Snippet } from '../components'
 import ButtonGroup from 'bootstrap-components/ButtonGroup'
 
@@ -91,6 +92,28 @@ const ButtonGroups = () => (
         </ButtonGroup>
       </div>
     </Snippet>
+
+    <Snippet
+      title="Dropdowns"
+      subtitle={
+        <div>
+          Children of the button group dropdown are identical to the
+          {' '}
+          <Link to="/dropdowns">Dropdown Component</Link>'s children.
+        </div>
+      }
+    >
+      <ButtonGroup>
+        <button>1</button>
+        <button>2</button>
+
+        <ButtonGroup dropdown title="Dropdown">
+          <div>Dropdown link</div>
+          <div>Dropdown link</div>
+        </ButtonGroup>
+      </ButtonGroup>
+    </Snippet>
+
   </div>
 )
 
