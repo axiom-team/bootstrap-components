@@ -48,39 +48,42 @@ const ButtonGroups = () => (
 
     <Snippet
       title="Sizing"
-      overrideCode={`<ButtonGroup size="lg">
-  ...
-</ButtonGroup>
-<ButtonGroup>
-  ...
-</ButtonGroup>
-<ButtonGroup size="sm">
-  ...
-</ButtonGroup>
-<ButtonGroup size="xs">
-  ...
-</ButtonGroup>`}
+      overrideCode={(
+        <div>
+          <ButtonGroup size="lg">
+            {'...'}
+          </ButtonGroup>
+          <ButtonGroup>
+            {'...'}
+          </ButtonGroup>
+          <ButtonGroup size="sm">
+            {'...'}
+          </ButtonGroup>
+          <ButtonGroup size="xs">
+            {'...'}
+          </ButtonGroup>
+        </div>
+      )}
     >
-
       <div className="button-group-sizing">
         <ButtonGroup size="lg">
           <button>Left</button>
           <button>Middle</button>
           <button>Right</button>
         </ButtonGroup>
-        <br/>
+        <br />
         <ButtonGroup>
           <button>Left</button>
           <button>Middle</button>
           <button>Right</button>
         </ButtonGroup>
-        <br/>
+        <br />
         <ButtonGroup size="sm">
           <button>Left</button>
           <button>Middle</button>
           <button>Right</button>
         </ButtonGroup>
-        <br/>
+        <br />
         <ButtonGroup size="xs">
           <button>Left</button>
           <button>Middle</button>
