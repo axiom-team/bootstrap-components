@@ -114,6 +114,38 @@ const ButtonGroups = () => (
       </ButtonGroup>
     </Snippet>
 
+    <Snippet
+      title="Vertical variation"
+      overrideCode={(
+        <ButtonGroup vertical>{'...'}</ButtonGroup>
+      )}
+    >
+      <ButtonGroup vertical>
+        <button>Button</button>
+        <button>Button</button>
+
+        <ButtonGroup dropdown title="Dropdown">
+          <div>Dropdown link</div>
+          <div>Dropdown link</div>
+        </ButtonGroup>
+
+        <button>Button</button>
+        <button>Button</button>
+
+        <ButtonGroup dropdown title="Dropdown">
+          <div>Dropdown link</div>
+          <div>Dropdown link</div>
+        </ButtonGroup>
+        <ButtonGroup dropdown title="Dropdown">
+          <div>Dropdown link</div>
+          <div>Dropdown link</div>
+        </ButtonGroup>
+        <ButtonGroup dropdown title="Dropdown">
+          <div>Dropdown link</div>
+          <div>Dropdown link</div>
+        </ButtonGroup>
+      </ButtonGroup>
+    </Snippet>
   </div>
 )
 
