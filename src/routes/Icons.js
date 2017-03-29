@@ -10,7 +10,15 @@ import { space } from '../utils'
 const Icons = () => (
   <div>
 
-    <Snippet>
+    <Snippet subtitle={(
+      <div>
+        Use any Bootstrap
+        {' '}
+        <a href="http://getbootstrap.com/components/#glyphicons">
+          Glyphicon
+        </a>
+      </div>
+    )}>
       <Icon>search</Icon>
     </Snippet>
 
