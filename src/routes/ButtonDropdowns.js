@@ -4,15 +4,10 @@
 
 import React from 'react'
 import { Snippet, Arrow } from '../components'
-import ButtonGroup from 'bootstrap-components/ButtonGroup'
-
-const styles = {
-  capitalize: {
-    textTransform: 'capitalize'
-  }
-}
+import ButtonDropdown from 'bootstrap-components/ButtonDropdown'
 
 const ButtonDropdowns = () => {
+
 
   const commonChildren = (
     <div>
@@ -25,75 +20,65 @@ const ButtonDropdowns = () => {
   ).props.children
 
   return (
-    <div className="button-dropdowns-single">
+    <div className="button-dropdowns">
       <Snippet
         title="Single"
         overrideCode={(
-          <ButtonGroup
-            dropdown
+          <ButtonDropdown
             title="Default"
             type="default"
           >
             {commonChildren}
-          </ButtonGroup>
+          </ButtonDropdown>
         )}
       >
-        <div>
-          {[
-            'default',
-            'primary',
-            'success',
-            'info',
-            'warning',
-            'danger'
-          ].map((type, i) => (
-            <ButtonGroup
-              key={i}
-              dropdown
-              title={type}
-              type={type}
-              style={styles.capitalize}
-            >
-              {commonChildren}
-            </ButtonGroup>
-          ))}
-        </div>
+        {[
+          'default',
+          'primary',
+          'success',
+          'info',
+          'warning',
+          'danger'
+        ].map((type, i) => (
+          <ButtonDropdown
+            key={i}
+            title={type}
+            type={type}
+          >
+            {commonChildren}
+          </ButtonDropdown>
+        ))}
       </Snippet>
 
       <Snippet
         title="Split"
         overrideCode={(
-          <ButtonGroup
-            dropdown
+          <ButtonDropdown
+            title="Default"
+            type="default"
             split
-            title="Danger"
-            type="danger"
           >
             {commonChildren}
-          </ButtonGroup>
+          </ButtonDropdown>
         )}
       >
-        <div>
-          {[
-            'default',
-            'primary',
-            'success',
-            'info',
-            'warning',
-            'danger'
-          ].map((type, i) => (
-            <ButtonGroup
-              key={i}
-              dropdown
-              split
-              title={type}
-              type={type}
-              style={styles.capitalize}
-            >
-              {commonChildren}
-            </ButtonGroup>
-          ))}
-        </div>
+        {[
+          'default',
+          'primary',
+          'success',
+          'info',
+          'warning',
+          'danger'
+        ].map((type, i) => (
+          <ButtonDropdown
+            split
+            key={i}
+            title={type}
+            type={type}
+          >
+            {commonChildren}
+          </ButtonDropdown>
+        ))}
       </Snippet>
 
       <Arrow direction="left">button groups</Arrow>

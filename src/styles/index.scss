@@ -25,6 +25,10 @@ main {
   margin: 5px 0;
 }
 
-.button-dropdowns-single .btn-group {
+.button-dropdowns .btn-group {
   margin: 2px;
+
+  a, button {
+    text-transform: capitalize;
+  }
 }
