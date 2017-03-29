@@ -57,8 +57,42 @@ const ButtonDropdowns = () => {
               {commonChildren}
             </ButtonGroup>
           ))}
+        </div>
+      </Snippet>
 
-
+      <Snippet
+        title="Split"
+        overrideCode={(
+          <ButtonGroup
+            dropdown
+            split
+            title="Danger"
+            type="danger"
+          >
+            {commonChildren}
+          </ButtonGroup>
+        )}
+      >
+        <div>
+          {[
+            'default',
+            'primary',
+            'success',
+            'info',
+            'warning',
+            'danger'
+          ].map((type, i) => (
+            <ButtonGroup
+              key={i}
+              dropdown
+              split
+              title={type}
+              type={type}
+              style={styles.capitalize}
+            >
+              {commonChildren}
+            </ButtonGroup>
+          ))}
         </div>
       </Snippet>
 
