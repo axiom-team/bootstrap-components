@@ -178,7 +178,6 @@ const ButtonGroups = () => (
 
     <Arrow direction="left">dropdowns</Arrow>
     <Arrow direction="right">button dropdowns</Arrow>
-
   </div>
 )
 
