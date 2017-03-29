@@ -37,7 +37,7 @@ const ButtonDropdowns = () => {
           <div>
             Children of the button group dropdown are identical to the
             {' '}
-            <Link to="/dropdowns">Dropdown Component</Link>'s children.
+            <Link to="/dropdowns">Dropdown Component</Link>'s children
           </div>
         }
 
