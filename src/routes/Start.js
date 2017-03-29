@@ -4,81 +4,87 @@
 
 import React from 'react'
 import { Code, Arrow } from '../components'
+import Grid from 'bootstrap-components/Grid'
 
 const Start = () => (
   <div>
     <main>
       <h1>Prerequisite</h1>
 
-      <div className="row">
-        <div className="col-md-6">
-          <section>
-            Load
-            {' '}
-            <a href="http://getbootstrap.com/getting-started/">Bootstrap</a>
-            {' '}
-            in your <code>index.html</code>
-          </section>
-        </div>
+      <Grid>
+        <row>
+          <col md={6}>
+            <section>
+              Load
+              {' '}
+              <a href="http://getbootstrap.com/getting-started/">Bootstrap</a>
+              {' '}
+              in your <code>index.html</code>
+            </section>
+          </col>
 
-        <div className="col-md-6">
-          <section>
-            Bootstrap's JavaScript require's
-            {' '}
-            <a href="https://developers.google.com/speed/libraries/#jquery">JQuery</a>
-          </section>
-        </div>
-      </div>
+          <col md={6}>
+            <section>
+              Bootstrap's JavaScript require's
+              {' '}
+              <a href="https://developers.google.com/speed/libraries/#jquery">JQuery</a>
+            </section>
+          </col>
+        </row>
+      </Grid>
     </main>
 
     <main>
       <h1>Install</h1>
 
-      <div className="row">
-        <div className="col-md-6">
-          <section>Install with npm</section>
-        </div>
+      <Grid>
+        <row>
+          <col md={6}>
+            <section>Install with npm</section>
+          </col>
 
-        <div className="col-md-6">
-          <Code language="bash">
-            {'npm install --save bootstrap-components'}
-          </Code>
-        </div>
-      </div>
+          <col md={6}>
+            <Code language="bash">
+              {'npm install --save bootstrap-components'}
+            </Code>
+          </col>
+        </row>
+      </Grid>
     </main>
 
     <main>
       <h1>Import</h1>
 
-      <div className="row">
-        <div className="col-md-6">
-          <section>
-            Either import multiple components in one statement
-          </section>
-        </div>
+      <Grid>
+        <row>
+          <col md={6}>
+            <section>
+              Either import multiple components in one statement
+            </section>
+          </col>
 
-        <div className="col-md-6">
+          <col md={6}>
+            <Code language="javascript">
+              {'import { Icon, Button } from \'bootstrap-components\''}
+            </Code>
+          </col>
+        </row>
 
-          <Code language="javascript">
-            {'import { Icon, Button } from \'bootstrap-components\''}
-          </Code>
-        </div>
-      </div>
+        <row>
+          <col md={6}>
+            <section>
+              Or import components individually
+            </section>
+          </col>
 
-      <div className="row">
-        <div className="col-md-6">
-          <section>
-            Or import components individually
-          </section>
-        </div>
-
-        <div className="col-md-6">
-          <Code language="javascript">
-            {`import Icon from 'bootstrap-components/Icon'
+          <col md={6}>
+            <Code language="javascript">
+              {`import Icon from 'bootstrap-components/Icon'
 import Button from 'bootstrap-components/Button'`}
-          </Code>
-        </div>
-      </div>
+            </Code>
+          </col>
+        </row>
+      </Grid>
     </main>
 
     <Arrow direction='right'>icons</Arrow>

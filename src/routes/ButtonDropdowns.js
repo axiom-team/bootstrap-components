@@ -3,11 +3,20 @@
  */
 
 import React from 'react'
+import { Link } from 'react-router'
 import { Snippet, Arrow } from '../components'
-import ButtonDropdown from 'bootstrap-components/ButtonDropdown'
+import ButtonGroup from 'bootstrap-components/ButtonGroup'
 
 const ButtonDropdowns = () => {
 
+  const types = [
+    'default',
+    'primary',
+    'success',
+    'info',
+    'warning',
+    'danger'
+  ]
 
   const commonChildren = (
     <div>
@@ -23,61 +32,60 @@ const ButtonDropdowns = () => {
     <div className="button-dropdowns">
       <Snippet
         title="Single"
+
+        subtitle={
+          <div>
+            Children of the button group dropdown are identical to the
+            {' '}
+            <Link to="/dropdowns">Dropdown Component</Link>'s children.
+          </div>
+        }
+
         overrideCode={(
-          <ButtonDropdown
+          <ButtonGroup
+            dropdown
             title="Default"
             type="default"
           >
             {commonChildren}
-          </ButtonDropdown>
+          </ButtonGroup>
         )}
       >
-        {[
-          'default',
-          'primary',
-          'success',
-          'info',
-          'warning',
-          'danger'
-        ].map((type, i) => (
-          <ButtonDropdown
+        {types.map((type, i) => (
+          <ButtonGroup
             key={i}
+            dropdown
             title={type}
             type={type}
           >
             {commonChildren}
-          </ButtonDropdown>
+          </ButtonGroup>
         ))}
       </Snippet>
 
       <Snippet
         title="Split"
         overrideCode={(
-          <ButtonDropdown
+          <ButtonGroup
+            dropdown
             title="Default"
             type="default"
             split
           >
             {commonChildren}
-          </ButtonDropdown>
+          </ButtonGroup>
         )}
       >
-        {[
-          'default',
-          'primary',
-          'success',
-          'info',
-          'warning',
-          'danger'
-        ].map((type, i) => (
-          <ButtonDropdown
+        {types.map((type, i) => (
+          <ButtonGroup
+            dropdown
             split
             key={i}
             title={type}
             type={type}
           >
             {commonChildren}
-          </ButtonDropdown>
+          </ButtonGroup>
         ))}
       </Snippet>
 
