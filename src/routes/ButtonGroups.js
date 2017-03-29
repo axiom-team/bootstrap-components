@@ -3,8 +3,8 @@
  */
 
 import React from 'react'
-import {Link} from 'react-router'
-import { Snippet } from '../components'
+import { Link } from 'react-router'
+import { Snippet, Arrow } from '../components'
 import ButtonGroup from 'bootstrap-components/ButtonGroup'
 
 const ButtonGroups = () => (
@@ -175,6 +175,10 @@ const ButtonGroups = () => (
         </ButtonGroup>
       </ButtonGroup>
     </Snippet>
+
+    <Arrow direction="left">dropdowns</Arrow>
+    <Arrow direction="right">button dropdowns</Arrow>
+
   </div>
 )
 

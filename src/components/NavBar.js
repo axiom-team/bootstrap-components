@@ -42,9 +42,9 @@ export const Navbar = () => (
           aria-expanded="false"
         >
           <span className="sr-only">Toggle navigation</span>
-          <span className="icon-bar"/>
-          <span className="icon-bar"/>
-          <span className="icon-bar"/>
+          <span className="icon-bar" />
+          <span className="icon-bar" />
+          <span className="icon-bar" />
         </button>
 
         <Link
@@ -69,7 +69,12 @@ export const Navbar = () => (
         </ul>
 
         <ul className="nav navbar-nav navbar-right">
-          {['icons', 'dropdowns', 'button groups'].map((title, i) =>
+          {[
+            'icons',
+            'dropdowns',
+            'button groups',
+            'button dropdowns'
+          ].map((title, i) =>
             <NavTab key={i}>{title}</NavTab>
           )}
         </ul>
