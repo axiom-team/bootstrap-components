@@ -117,7 +117,7 @@ const ButtonDropdowns = () => {
               {'...'}
             </ButtonGroup>
           </div>
-          )}
+        )}
       >
         <div>
           <ButtonGroup
@@ -140,6 +140,38 @@ const ButtonDropdowns = () => {
             dropdown
             title="Extra small button"
             size="xs"
+          >
+            {commonChildren}
+          </ButtonGroup>
+        </div>
+      </Snippet>
+
+      <Snippet
+        title="Dropup variation"
+        overrideCode={(
+          <ButtonGroup
+            dropup
+            split
+            title="Dropup"
+          >
+            {commonChildren}
+          </ButtonGroup>
+        )}
+      >
+        <div>
+          <ButtonGroup
+            dropup
+            split
+            title="Dropup"
+          >
+            {commonChildren}
+          </ButtonGroup>
+
+          <ButtonGroup
+            dropup
+            split
+            type="primary"
+            title="Dropup"
           >
             {commonChildren}
           </ButtonGroup>
