@@ -89,6 +89,63 @@ const ButtonDropdowns = () => {
         ))}
       </Snippet>
 
+      <Snippet
+        title="Sizing"
+        overrideCode={(
+          <div>
+            <ButtonGroup
+              dropdown
+              title="Large button"
+              size="lg"
+            >
+              {'...'}
+            </ButtonGroup>
+
+            <ButtonGroup
+              dropdown
+              title="Small button"
+              size="sm"
+            >
+              {'...'}
+            </ButtonGroup>
+
+            <ButtonGroup
+              dropdown
+              title="Extra small button"
+              size="sm"
+            >
+              {'...'}
+            </ButtonGroup>
+          </div>
+          )}
+      >
+        <div>
+          <ButtonGroup
+            dropdown
+            title="Large button"
+            size="lg"
+          >
+            {commonChildren}
+          </ButtonGroup>
+
+          <ButtonGroup
+            dropdown
+            title="Small button"
+            size="sm"
+          >
+            {commonChildren}
+          </ButtonGroup>
+
+          <ButtonGroup
+            dropdown
+            title="Extra small button"
+            size="sm"
+          >
+            {commonChildren}
+          </ButtonGroup>
+        </div>
+      </Snippet>
+
       <Arrow direction="left">button groups</Arrow>
     </div>
   )
