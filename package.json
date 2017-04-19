@@ -14,7 +14,7 @@
     "yinstall": "yarn install"
   },
   "dependencies": {
-    "bootstrap-components": "^1.1.232",
+    "bootstrap-components": "^1.1.233",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },

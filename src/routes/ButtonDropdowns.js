@@ -112,7 +112,7 @@ const ButtonDropdowns = () => {
             <ButtonGroup
               dropdown
               title="Extra small button"
-              size="sm"
+              size="xs"
             >
               {'...'}
             </ButtonGroup>
@@ -139,7 +139,7 @@ const ButtonDropdowns = () => {
           <ButtonGroup
             dropdown
             title="Extra small button"
-            size="sm"
+            size="xs"
           >
             {commonChildren}
           </ButtonGroup>
