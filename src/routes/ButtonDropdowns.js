@@ -179,6 +179,7 @@ const ButtonDropdowns = () => {
       </Snippet>
 
       <Arrow direction="left">button groups</Arrow>
+      <Arrow direction="right">input groups</Arrow>
     </div>
   )
 }

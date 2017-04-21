@@ -11,6 +11,7 @@ import Dropdowns from './Dropdowns'
 import Grid from './Grid'
 import ButtonGroups from './ButtonGroups'
 import ButtonDropdowns from './ButtonDropdowns'
+import InputGroups from './InputGroups'
 
 const routes = (
   <Route path="/" component={App}>
@@ -21,6 +22,7 @@ const routes = (
     <Route path="dropdowns" component={Dropdowns} />
     <Route path="button-groups" component={ButtonGroups} />
     <Route path="button-dropdowns" component={ButtonDropdowns} />
+    <Route path="input-groups" component={InputGroups} />
   </Route>
 )
 
