@@ -25,7 +25,7 @@ export const Footer = () => (
           xs={12}
           md={7}
         >
-          <a href="https://github.com/axiom-team/bootstrap-components">
+          <a href="https://github.com/timurtu/bootstrap-components">
             <img
               src={githubLogo}
               alt="GitHub logo"
