@@ -67,7 +67,7 @@ const InputGroups = () => (
           <col xs={6}>
             <InputGroup>
               <addon>
-                <input type="radio" />
+                <input type="checkbox" />
               </addon>
 
               <input type="text" />
