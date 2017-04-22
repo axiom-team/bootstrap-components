@@ -64,7 +64,7 @@ const InputGroups = () => (
     <Snippet title="Checkboxes and radio addons">
       <Grid>
         <row>
-          <col xs={6}>
+          <col sm={6}>
             <InputGroup>
               <addon>
                 <input type="checkbox" />
@@ -74,13 +74,33 @@ const InputGroups = () => (
             </InputGroup>
           </col>
 
-          <col xs={6}>
+          <col sm={6}>
             <InputGroup>
               <addon>
                 <input type="radio" />
               </addon>
 
               <input type="text" />
+            </InputGroup>
+          </col>
+        </row>
+      </Grid>
+    </Snippet>
+
+    <Snippet title="Button addons">
+      <Grid>
+        <row>
+          <col sm={6}>
+            <InputGroup>
+              <button>Go!</button>
+              <input type="text" placeholder="Search for..." />
+            </InputGroup>
+          </col>
+
+          <col sm={6}>
+            <InputGroup>
+              <input type="text" placeholder="Search for..." />
+              <button>Go!</button>
             </InputGroup>
           </col>
         </row>
