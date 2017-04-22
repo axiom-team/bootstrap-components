@@ -4,7 +4,7 @@
 
 import React from 'react'
 import { Arrow, Snippet } from '../components'
-import InputGroup from 'bootstrap-components/InputGroup'
+import { InputGroup, Grid } from 'bootstrap-components'
 
 const styles = {
   column: {
@@ -61,6 +61,31 @@ const InputGroups = () => (
       </div>
     </Snippet>
 
+    <Snippet title="Checkboxes and radio addons">
+      <Grid>
+        <row>
+          <col xs={6}>
+            <InputGroup>
+              <addon>
+                <input type="radio" />
+              </addon>
+
+              <input type="text" />
+            </InputGroup>
+          </col>
+
+          <col xs={6}>
+            <InputGroup>
+              <addon>
+                <input type="radio" />
+              </addon>
+
+              <input type="text" />
+            </InputGroup>
+          </col>
+        </row>
+      </Grid>
+    </Snippet>
 
     <Arrow direction="left">button dropdowns</Arrow>
   </div>
