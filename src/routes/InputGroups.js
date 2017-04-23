@@ -54,7 +54,7 @@ const InputGroups = () => (
           <input type="text" placeholder="Username" />
         </InputGroup>
 
-        <InputGroup size="xs">
+        <InputGroup size="sm">
           <addon>@</addon>
           <input type="text" placeholder="Username" />
         </InputGroup>
