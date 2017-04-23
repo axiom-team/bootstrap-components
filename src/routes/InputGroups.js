@@ -107,6 +107,44 @@ const InputGroups = () => (
       </Grid>
     </Snippet>
 
+    <Snippet title="Buttons with dropdowns">
+      <Grid>
+        <row>
+          <col sm={6}>
+            <InputGroup>
+              <button
+                dropdown
+                title="Action"
+              >
+                <div>Action</div>
+                <div>Another action</div>
+                <div>Something else here</div>
+                <hr />
+                <div>Separated link</div>
+              </button>
+              <input type="text" placeholder="Search for..." />
+            </InputGroup>
+          </col>
+
+          <col sm={6}>
+            <InputGroup>
+              <input type="text" placeholder="Search for..." />
+              <button
+                dropdown
+                title="Action"
+              >
+                <div>Action</div>
+                <div>Another action</div>
+                <div>Something else here</div>
+                <hr />
+                <div>Separated link</div>
+              </button>
+            </InputGroup>
+          </col>
+        </row>
+      </Grid>
+    </Snippet>
+
     <Arrow direction="left">button dropdowns</Arrow>
   </div>
 )
