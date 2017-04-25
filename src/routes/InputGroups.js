@@ -15,138 +15,179 @@ const styles = {
   }
 }
 
-const InputGroups = () => (
-  <div>
-    <Snippet>
-      <div style={styles.column}>
-        <InputGroup>
-          <addon>@</addon>
-          <input type="text" placeholder="Username" />
-        </InputGroup>
+const InputGroups = () => {
 
-        <InputGroup>
-          <input type="text" placeholder="Recipient's username" />
-          <addon>@example.com</addon>
-        </InputGroup>
+  const commonChildren = (
+    <div>
+      <div>Action</div>
+      <div>Another action</div>
+      <div>Something else here</div>
+      <hr />
+      <div>Separated link</div>
+    </div>
+  ).props.children
 
-        <InputGroup>
-          <addon>$</addon>
-          <input type="text" />
-          <addon>.00</addon>
-        </InputGroup>
+  return (
+    <div>
+      <Snippet>
+        <div style={styles.column}>
+          <InputGroup>
+            <addon>@</addon>
+            <input type="text" placeholder="Username" />
+          </InputGroup>
 
-        <InputGroup>
-          <addon>https://example.com/users/</addon>
-          <input type="text" />
-        </InputGroup>
-      </div>
-    </Snippet>
+          <InputGroup>
+            <input type="text" placeholder="Recipient's username" />
+            <addon>@example.com</addon>
+          </InputGroup>
 
-    <Snippet title="Sizing">
-      <div style={styles.column}>
-        <InputGroup size="lg">
-          <addon>@</addon>
-          <input type="text" placeholder="Username" />
-        </InputGroup>
+          <InputGroup>
+            <addon>$</addon>
+            <input type="text" />
+            <addon>.00</addon>
+          </InputGroup>
 
-        <InputGroup>
-          <addon>@</addon>
-          <input type="text" placeholder="Username" />
-        </InputGroup>
+          <InputGroup>
+            <addon>https://example.com/users/</addon>
+            <input type="text" />
+          </InputGroup>
+        </div>
+      </Snippet>
 
-        <InputGroup size="sm">
-          <addon>@</addon>
-          <input type="text" placeholder="Username" />
-        </InputGroup>
-      </div>
-    </Snippet>
+      <Snippet title="Sizing">
+        <div style={styles.column}>
+          <InputGroup size="lg">
+            <addon>@</addon>
+            <input type="text" placeholder="Username" />
+          </InputGroup>
 
-    <Snippet title="Checkboxes and radio addons">
-      <Grid>
-        <row>
-          <col sm={6}>
+          <InputGroup>
+            <addon>@</addon>
+            <input type="text" placeholder="Username" />
+          </InputGroup>
+
+          <InputGroup size="sm">
+            <addon>@</addon>
+            <input type="text" placeholder="Username" />
+          </InputGroup>
+        </div>
+      </Snippet>
+
+      <Snippet title="Checkboxes and radio addons">
+        <Grid>
+          <row>
+            <col sm={6}>
+              <InputGroup>
+                <addon>
+                  <input type="checkbox" />
+                </addon>
+
+                <input type="text" />
+              </InputGroup>
+            </col>
+
+            <col sm={6}>
+              <InputGroup>
+                <addon>
+                  <input type="radio" />
+                </addon>
+
+                <input type="text" />
+              </InputGroup>
+            </col>
+          </row>
+        </Grid>
+      </Snippet>
+
+      <Snippet title="Button addons">
+        <Grid>
+          <row>
+            <col sm={6}>
+              <InputGroup>
+                <button>Go!</button>
+                <input type="text" placeholder="Search for..." />
+              </InputGroup>
+            </col>
+
+            <col sm={6}>
+              <InputGroup>
+                <input type="text" placeholder="Search for..." />
+                <button>Go!</button>
+              </InputGroup>
+            </col>
+          </row>
+        </Grid>
+      </Snippet>
+
+      <Snippet title="Buttons with dropdowns">
+        <Grid>
+          <row>
+            <col sm={6}>
+              <InputGroup>
+                <button dropdown title="Action">
+                  {commonChildren}
+                </button>
+                <input type="text" placeholder="Search for..." />
+              </InputGroup>
+            </col>
+
+            <col sm={6}>
+              <InputGroup>
+                <input type="text" placeholder="Search for..." />
+                <button
+                  dropdown
+                  title="Action"
+                >
+                  {commonChildren}
+                </button>
+              </InputGroup>
+            </col>
+          </row>
+        </Grid>
+      </Snippet>
+
+      <Snippet
+        title="Segmented buttons"
+        overrideCode={(
+          <div>
             <InputGroup>
-              <addon>
-                <input type="checkbox" />
-              </addon>
-
+              <button>Action</button>
+              <button dropdown>{'...'}</button>
               <input type="text" />
             </InputGroup>
-          </col>
 
-          <col sm={6}>
             <InputGroup>
-              <addon>
-                <input type="radio" />
-              </addon>
-
+              <button>Action</button>
+              <button dropdown>{'...'}</button>
               <input type="text" />
             </InputGroup>
-          </col>
-        </row>
-      </Grid>
-    </Snippet>
+          </div>
+        )}
+      >
+        <Grid>
+          <row>
+            <col md={6}>
+              <InputGroup>
+                <button>Action</button>
+                <button dropdown>{commonChildren}</button>
+                <input type="text" />
+              </InputGroup>
+            </col>
 
-    <Snippet title="Button addons">
-      <Grid>
-        <row>
-          <col sm={6}>
-            <InputGroup>
-              <button>Go!</button>
-              <input type="text" placeholder="Search for..." />
-            </InputGroup>
-          </col>
+            <col md={6}>
+              <InputGroup>
+                <input type="text" />
+                <button>Action</button>
+                <button dropdown>{commonChildren}</button>
+              </InputGroup>
+            </col>
+          </row>
+        </Grid>
+      </Snippet>
 
-          <col sm={6}>
-            <InputGroup>
-              <input type="text" placeholder="Search for..." />
-              <button>Go!</button>
-            </InputGroup>
-          </col>
-        </row>
-      </Grid>
-    </Snippet>
-
-    <Snippet title="Buttons with dropdowns">
-      <Grid>
-        <row>
-          <col sm={6}>
-            <InputGroup>
-              <button
-                dropdown
-                title="Action"
-              >
-                <div>Action</div>
-                <div>Another action</div>
-                <div>Something else here</div>
-                <hr />
-                <div>Separated link</div>
-              </button>
-              <input type="text" placeholder="Search for..." />
-            </InputGroup>
-          </col>
-
-          <col sm={6}>
-            <InputGroup>
-              <input type="text" placeholder="Search for..." />
-              <button
-                dropdown
-                title="Action"
-              >
-                <div>Action</div>
-                <div>Another action</div>
-                <div>Something else here</div>
-                <hr />
-                <div>Separated link</div>
-              </button>
-            </InputGroup>
-          </col>
-        </row>
-      </Grid>
-    </Snippet>
-
-    <Arrow direction="left">button dropdowns</Arrow>
-  </div>
-)
+      <Arrow direction="left">button dropdowns</Arrow>
+    </div>
+  )
+}
 
 export default InputGroups
