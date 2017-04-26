@@ -6,34 +6,64 @@ import React from 'react'
 import { Arrow, Snippet } from '../components'
 import Nav from 'bootstrap-components/Nav'
 
-const Navs = () => (
-  <div>
-    <Snippet title="Tabs">
-      <Nav tabs>
-        <div active>Home</div>
-        <div>Profile</div>
-        <div>Messages</div>
-      </Nav>
-    </Snippet>
+const Navs = () => {
 
-    <Snippet title="Pills">
-      <Nav pills>
-        <div active>Home</div>
-        <div>Profile</div>
-        <div>Messages</div>
-      </Nav>
-    </Snippet>
+  const commonChildren = (
+    <div>
+      <div active>Home</div>
+      <div>Profile</div>
+      <div>Messages</div>
+    </div>
+  ).props.children
 
-    <Snippet>
-      <Nav pills stacked>
-        <div active>Home</div>
-        <div>Profile</div>
-        <div>Messages</div>
-      </Nav>
-    </Snippet>
+  return (
+    <div>
+      <Snippet title="Tabs">
+        <Nav tabs>
+          {commonChildren}
+        </Nav>
+      </Snippet>
 
-    <Arrow direction="left">input groups</Arrow>
-  </div>
-)
+      <Snippet title="Pills">
+        <Nav pills>
+          {commonChildren}
+        </Nav>
+      </Snippet>
+
+      <Snippet>
+        <Nav pills stacked>
+          {commonChildren}
+        </Nav>
+      </Snippet>
+
+      <Snippet
+        title="Justified"
+        overrideCode={(
+          <Nav tabs justified>
+            {'...'}
+          </Nav>
+        )}
+      >
+        <Nav tabs justified>
+          {commonChildren}
+        </Nav>
+      </Snippet>
+
+      <Snippet
+        overrideCode={(
+          <Nav pills justified>
+            {'...'}
+          </Nav>
+        )}
+      >
+        <Nav pills justified>
+          {commonChildren}
+        </Nav>
+      </Snippet>
+
+      <Arrow direction="left">input groups</Arrow>
+    </div>
+  )
+}
 
 export default Navs
