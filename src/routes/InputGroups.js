@@ -4,7 +4,7 @@
 
 import React from 'react'
 import { Arrow, Snippet } from '../components'
-import { InputGroup, Grid } from 'bootstrap-components'
+import { InputGroup, Grid, Icon } from 'bootstrap-components'
 
 const styles = {
   column: {
@@ -179,6 +179,34 @@ const InputGroups = () => {
                 <input type="text" />
                 <button>Action</button>
                 <button dropdown>{commonChildren}</button>
+              </InputGroup>
+            </col>
+          </row>
+        </Grid>
+      </Snippet>
+
+      <Snippet title="Multiple buttons">
+        <Grid>
+          <row>
+            <col md={6}>
+              <InputGroup>
+                <button>
+                  <Icon>bold</Icon>
+                </button>
+                <button>
+                  <Icon>italic</Icon>
+                </button>
+                <input type="text" />
+              </InputGroup>
+            </col>
+
+            <col md={6}>
+              <InputGroup>
+                <input type="text" />
+                <button>
+                  <Icon>question-sign</Icon>
+                </button>
+                <button>Action</button>
               </InputGroup>
             </col>
           </row>
