@@ -214,6 +214,7 @@ const InputGroups = () => {
       </Snippet>
 
       <Arrow direction="left">button dropdowns</Arrow>
+      <Arrow direction="right">navs</Arrow>
     </div>
   )
 }
