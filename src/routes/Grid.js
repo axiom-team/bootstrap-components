@@ -9,6 +9,15 @@ import '../styles/grid.scss'
 
 const GridPage = () => (
   <div className="grid-display">
+
+    <Snippet
+      splitTheGrid
+      overrideCode={`import Grid from 'bootstrap-components/Grid'
+// or
+import { Grid } from 'bootstrap-components'`}
+      language="javascript"
+    />
+
     <Snippet
       title="Stacked-to-horizontal"
       splitTheGrid

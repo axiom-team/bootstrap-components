@@ -64,7 +64,7 @@ export class Snippet extends React.Component {
 
         {visibleSubtitle}
 
-        <Code>
+        <Code {...this.props}>
           {code}
         </Code>
       </div>
@@ -81,7 +81,7 @@ export class Snippet extends React.Component {
         {this.state.clearfixMobile ? <div className="clearfix"/> : null}
 
         <div className="col-md-6">
-          <Code>
+          <Code {...this.props}>
             {code}
           </Code>
         </div>

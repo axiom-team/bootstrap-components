@@ -29,6 +29,15 @@ const InputGroups = () => {
 
   return (
     <div>
+
+      <Snippet
+        splitTheGrid
+        overrideCode={`import InputGroup from 'bootstrap-components/InputGroup'
+// or
+import { InputGroup } from 'bootstrap-components'`}
+        language="javascript"
+      />
+
       <Snippet>
         <div style={styles.column}>
           <InputGroup>

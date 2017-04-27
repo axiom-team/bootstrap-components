@@ -8,6 +8,15 @@ import Dropdown from 'bootstrap-components/Dropdown'
 
 const Dropdowns = () => (
   <div>
+
+    <Snippet
+      splitTheGrid
+      overrideCode={`import Dropdown from 'bootstrap-components/Dropdown'
+// or
+import { Dropdown } from 'bootstrap-components'`}
+      language="javascript"
+    />
+
     <Snippet
       subtitle={
         <div>

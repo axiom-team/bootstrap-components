@@ -18,6 +18,15 @@ const Navs = () => {
 
   return (
     <div>
+
+      <Snippet
+        splitTheGrid
+        overrideCode={`import Nav from 'bootstrap-components/Nav'
+// or
+import { Nav } from 'bootstrap-components'`}
+        language="javascript"
+      />
+
       <Snippet title="Tabs">
         <Nav tabs>
           {commonChildren}

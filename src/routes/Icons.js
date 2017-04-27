@@ -10,6 +10,14 @@ import { space } from '../utils'
 const Icons = () => (
   <div>
 
+    <Snippet
+      splitTheGrid
+      overrideCode={`import Icon from 'bootstrap-components/Icon'
+// or
+import { Icon } from 'bootstrap-components'`}
+      language="javascript"
+    />
+
     <Snippet subtitle={(
       <div>
         Use any Bootstrap

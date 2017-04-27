@@ -30,6 +30,15 @@ const ButtonDropdowns = () => {
 
   return (
     <div className="button-dropdowns">
+
+      <Snippet
+        splitTheGrid
+        overrideCode={`import ButtonGroup from 'bootstrap-components/ButtonGroup'
+// or
+import { ButtonGroup } from 'bootstrap-components'`}
+        language="javascript"
+      />
+
       <Snippet
         title="Single"
 
