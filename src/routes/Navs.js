@@ -71,7 +71,7 @@ import { Nav } from 'bootstrap-components'`}
       </Snippet>
 
       <Snippet title="Disabled links">
-        <Nav>
+        <Nav pills>
           <div>Clickable link</div>
           <div>Clickable link</div>
           <div disabled>Disabled link</div>
