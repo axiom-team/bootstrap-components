@@ -97,6 +97,3 @@ export class Snippet extends React.Component {
     )
   }
 }
-Snippet.propTypes = {
-  children: React.PropTypes.any.isRequired
-}

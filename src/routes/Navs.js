@@ -70,6 +70,14 @@ import { Nav } from 'bootstrap-components'`}
         </Nav>
       </Snippet>
 
+      <Snippet title="Disabled links">
+        <Nav>
+          <div>Clickable link</div>
+          <div>Clickable link</div>
+          <div disabled>Disabled link</div>
+        </Nav>
+      </Snippet>
+
       <Arrow direction="left">input groups</Arrow>
     </div>
   )
