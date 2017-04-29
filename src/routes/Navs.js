@@ -78,6 +78,42 @@ import { Nav } from 'bootstrap-components'`}
         </Nav>
       </Snippet>
 
+      <Snippet title="Tabs with dropdowns">
+        <Nav tabs>
+          <div active>Home</div>
+          <div>Help</div>
+
+          <div
+            dropdown
+            title="Dropdown"
+          >
+            <div>Action</div>
+            <div>Another action</div>
+            <div>Something else here</div>
+            <hr />
+            <div>Separated link</div>
+          </div>
+        </Nav>
+      </Snippet>
+
+      <Snippet title="Pills with dropdowns">
+        <Nav pills>
+          <div active>Home</div>
+          <div>Help</div>
+
+          <div
+            dropdown
+            title="Dropdown"
+          >
+            <div>Action</div>
+            <div>Another action</div>
+            <div>Something else here</div>
+            <hr />
+            <div>Separated link</div>
+          </div>
+        </Nav>
+      </Snippet>
+
       <Arrow direction="left">input groups</Arrow>
     </div>
   )
