@@ -6,15 +6,6 @@ import React from 'react'
 import { Arrow, Snippet } from '../components'
 import { InputGroup, Grid, Icon } from 'bootstrap-components'
 
-const styles = {
-  column: {
-    height: '200px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between'
-  }
-}
-
 const InputGroups = () => {
 
   const commonChildren = (
@@ -38,8 +29,33 @@ import { InputGroup } from 'bootstrap-components'`}
         language="javascript"
       />
 
-      <Snippet>
-        <div style={styles.column}>
+      <Snippet
+        overrideCode={(
+          <div>
+            <InputGroup>
+              <addon>@</addon>
+              <input type="text" placeholder="Username" />
+            </InputGroup>
+
+            <InputGroup>
+              <input type="text" placeholder="Recipient's username" />
+              <addon>@example.com</addon>
+            </InputGroup>
+
+            <InputGroup>
+              <addon>$</addon>
+              <input type="text" />
+              <addon>.00</addon>
+            </InputGroup>
+
+            <InputGroup>
+              <addon>https://example.com/users/</addon>
+              <input type="text" />
+            </InputGroup>
+          </div>
+        )}
+      >
+        <div className="input-group-column">
           <InputGroup>
             <addon>@</addon>
             <input type="text" placeholder="Username" />
@@ -63,8 +79,28 @@ import { InputGroup } from 'bootstrap-components'`}
         </div>
       </Snippet>
 
-      <Snippet title="Sizing">
-        <div style={styles.column}>
+      <Snippet
+        title="Sizing"
+        overrideCode={(
+          <div>
+            <InputGroup size="lg">
+              <addon>@</addon>
+              <input type="text" placeholder="Username" />
+            </InputGroup>
+
+            <InputGroup>
+              <addon>@</addon>
+              <input type="text" placeholder="Username" />
+            </InputGroup>
+
+            <InputGroup size="sm">
+              <addon>@</addon>
+              <input type="text" placeholder="Username" />
+            </InputGroup>
+          </div>
+        )}
+      >
+        <div className="input-group-column">
           <InputGroup size="lg">
             <addon>@</addon>
             <input type="text" placeholder="Username" />
