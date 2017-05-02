@@ -11,9 +11,7 @@ const ButtonGroups = () => (
 
     <Snippet
       splitTheGrid
-      overrideCode={`import ButtonGroup from 'bootstrap-components/ButtonGroup'
-// or
-import { ButtonGroup } from 'bootstrap-components'`}
+      overrideCode={'import ButtonGroup from \'bootstrap-components/ButtonGroup\''}
       language="javascript"
     />
 

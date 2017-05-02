@@ -15,19 +15,21 @@ const Start = () => (
         <row>
           <col md={6}>
             <section>
-              Load
-              {' '}
-              <a href="http://getbootstrap.com/getting-started/">Bootstrap</a>
-              {' '}
-              in your <code>index.html</code>
+              <h3>
+                Load
+                {' '}
+                <a href="http://getbootstrap.com/getting-started/">Bootstrap</a>
+              </h3>
             </section>
           </col>
 
           <col md={6}>
             <section>
-              Bootstrap's JavaScript require's
-              {' '}
-              <a href="https://developers.google.com/speed/libraries/#jquery">JQuery</a>
+              <h3>
+                Bootstrap's JavaScript require's
+                {' '}
+                <a href="https://developers.google.com/speed/libraries/#jquery">JQuery</a>
+              </h3>
             </section>
           </col>
         </row>
@@ -40,7 +42,11 @@ const Start = () => (
       <Grid>
         <row>
           <col md={6}>
-            <section>Install with npm</section>
+            <section>
+              <h3>
+                Install with npm
+              </h3>
+            </section>
           </col>
 
           <col md={6}>
@@ -59,7 +65,9 @@ const Start = () => (
         <row>
           <col md={6}>
             <section>
-              Either import multiple components in one statement
+              <h3>
+                Either import multiple components in one statement
+              </h3>
             </section>
           </col>
 
@@ -73,7 +81,9 @@ const Start = () => (
         <row>
           <col md={6}>
             <section>
-              Or import components individually
+              <h3>
+                Or import components individually
+              </h3>
             </section>
           </col>
 

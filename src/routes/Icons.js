@@ -12,19 +12,19 @@ const Icons = () => (
 
     <Snippet
       splitTheGrid
-      overrideCode={`import Icon from 'bootstrap-components/Icon'
-// or
-import { Icon } from 'bootstrap-components'`}
+      overrideCode={'import Icon from \'bootstrap-components/Icon\''}
       language="javascript"
     />
 
     <Snippet subtitle={(
       <div>
-        Use any Bootstrap
-        {' '}
-        <a href="http://getbootstrap.com/components/#glyphicons">
-          Glyphicon
-        </a>
+        <h3>
+          Use any Bootstrap
+          {' '}
+          <a href="http://getbootstrap.com/components/#glyphicons">
+            Glyphicon
+          </a>
+        </h3>
       </div>
     )}>
       <Icon>search</Icon>

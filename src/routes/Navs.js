@@ -21,9 +21,7 @@ const Navs = () => {
 
       <Snippet
         splitTheGrid
-        overrideCode={`import Nav from 'bootstrap-components/Nav'
-// or
-import { Nav } from 'bootstrap-components'`}
+        overrideCode={'import Nav from \'bootstrap-components/Nav\''}
         language="javascript"
       />
 

@@ -12,9 +12,7 @@ const GridPage = () => (
 
     <Snippet
       splitTheGrid
-      overrideCode={`import Grid from 'bootstrap-components/Grid'
-// or
-import { Grid } from 'bootstrap-components'`}
+      overrideCode={'import Grid from \'bootstrap-components/Grid\''}
       language="javascript"
     />
 

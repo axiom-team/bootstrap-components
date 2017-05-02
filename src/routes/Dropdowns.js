@@ -11,23 +11,11 @@ const Dropdowns = () => (
 
     <Snippet
       splitTheGrid
-      overrideCode={`import Dropdown from 'bootstrap-components/Dropdown'
-// or
-import { Dropdown } from 'bootstrap-components'`}
+      overrideCode={'import Dropdown from \'bootstrap-components/Dropdown\''}
       language="javascript"
     />
 
-    <Snippet
-      subtitle={
-        <div>
-          The <code>to</code> prop uses
-          {' '}
-          <a href="https://github.com/ReactTraining/react-router">
-            React Router
-          </a>{'\''}s <code>Link</code> component
-        </div>
-      }
-    >
+    <Snippet>
       <Dropdown title='Dropdown'>
         <div>Action</div>
         <div>Another Action</div>
@@ -40,22 +28,13 @@ import { Dropdown } from 'bootstrap-components'`}
       </Dropdown>
     </Snippet>
 
-    <Snippet
-      title="Dropup"
-      subtitle={
-        <div>
-          The <code>href</code> prop uses an <code>{'<'}a{'>'}</code>
-        </div>
-      }
-    >
+    <Snippet title="Dropup">
       <Dropdown title='Dropup' dropup>
         <div>Action</div>
         <div>Another Action</div>
         <div>Something else here</div>
         <hr/>
-        <div
-          href="/icons"
-        >
+        <div href="/icons">
           Icons page
         </div>
       </Dropdown>

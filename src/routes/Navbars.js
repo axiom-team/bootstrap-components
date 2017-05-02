@@ -23,6 +23,7 @@ const Navbars = () => (
         <header>
           <brand>Brand</brand>
         </header>
+
       </Navbar>
     </Snippet>
 

@@ -3,7 +3,6 @@
  */
 
 import React from 'react'
-import { Link } from 'react-router'
 import { Snippet, Arrow } from '../components'
 import ButtonGroup from 'bootstrap-components/ButtonGroup'
 
@@ -33,22 +32,12 @@ const ButtonDropdowns = () => {
 
       <Snippet
         splitTheGrid
-        overrideCode={`import ButtonGroup from 'bootstrap-components/ButtonGroup'
-// or
-import { ButtonGroup } from 'bootstrap-components'`}
+        overrideCode={'import ButtonGroup from \'bootstrap-components/ButtonGroup\''}
         language="javascript"
       />
 
       <Snippet
         title="Single"
-
-        subtitle={
-          <div>
-            Children of the button group dropdown are identical to the
-            {' '}
-            <Link to="/dropdowns">Dropdown Component</Link>'s children
-          </div>
-        }
 
         overrideCode={(
           <ButtonGroup

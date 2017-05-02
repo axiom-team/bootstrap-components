@@ -23,9 +23,7 @@ const InputGroups = () => {
 
       <Snippet
         splitTheGrid
-        overrideCode={`import InputGroup from 'bootstrap-components/InputGroup'
-// or
-import { InputGroup } from 'bootstrap-components'`}
+        overrideCode={'import InputGroup from \'bootstrap-components/InputGroup\''}
         language="javascript"
       />
 
