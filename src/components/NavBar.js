@@ -92,7 +92,8 @@ export const Navbar = () => {
                   'button groups',
                   'button dropdowns',
                   'input groups',
-                  'navs'
+                  'navs',
+                  'navbars',
                 ].map((title, i) =>
                   <NavTab key={i}>{title}</NavTab>
                 )}

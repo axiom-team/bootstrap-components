@@ -115,6 +115,7 @@ import { Nav } from 'bootstrap-components'`}
       </Snippet>
 
       <Arrow direction="left">input groups</Arrow>
+      <Arrow direction="right">navbars</Arrow>
     </div>
   )
 }

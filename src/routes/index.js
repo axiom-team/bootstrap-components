@@ -13,6 +13,7 @@ import ButtonGroups from './ButtonGroups'
 import ButtonDropdowns from './ButtonDropdowns'
 import InputGroups from './InputGroups'
 import Navs from './Navs'
+import Navbars from './Navbars'
 
 const routes = (
   <Route path="/" component={App}>
@@ -25,6 +26,7 @@ const routes = (
     <Route path="button-dropdowns" component={ButtonDropdowns} />
     <Route path="input-groups" component={InputGroups} />
     <Route path="navs" component={Navs} />
+    <Route path="navbars" component={Navbars} />
   </Route>
 )
 
