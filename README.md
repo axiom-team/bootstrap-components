@@ -1,6 +1,6 @@
 # React Bootstrap Components
 
-### [![npm version](https://badge.fury.io/js/bootstrap-components.svg)](https://badge.fury.io/js/bootstrap-
+### [![npm version](https://badge.fury.io/js/bootstrap-components.svg)](https://badge.fury.io/js/bootstrap-components)
 
 ## Install
 
