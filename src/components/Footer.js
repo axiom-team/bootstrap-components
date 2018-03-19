@@ -61,7 +61,7 @@ export const Footer = () => (
               className="main-title"
               href="https://github.com/timurtu"
             >
-              With <Icon>heart-empty</Icon> by Timur.
+              With <Icon>heart-empty</Icon> by Timur
             </a>
           )}
         />
